@@ -1,0 +1,28 @@
+.contact-title-container {
+  @apply text-text-color -translate-y-[20%] flex-1;
+}
+
+.contact-title-container p {
+  @apply text-[55px];
+}
+
+.contact-title-container h1 {
+  @apply text-[30px] text-transparent ml-6 pb-10;
+  -webkit-text-stroke: 1px #8f93a5;
+}
+
+.contact-title-container h3 {
+  @apply text-[20px] ml-6;
+}
+
+@media (min-width: 220px) and (max-width: 1050px) {
+  .contact-title-container {
+    @apply text-center;
+  }
+  .contact-title-container h1 {
+    @apply ml-0;
+  }
+  .contact-title-container h3 {
+    @apply ml-0;
+  }
+}

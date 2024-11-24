@@ -1,0 +1,39 @@
+.input-container {
+  @apply flex-1;
+}
+.input-containt input,
+textarea {
+  @apply outline-none bg-[#2d2d2e] w-full h-[45px] transition-all duration-1000 bg-opacity-50;
+}
+.input-containt div {
+  @apply mb-[25px] bg-[#2d2d2e] w-full transition-all duration-1000 bg-opacity-50;
+}
+.input-name,
+.input-phone {
+  @apply inline-block mb-[25px] w-[calc(50%-13px)] bg-[#2d2d2e] transition-all duration-1000 bg-opacity-50;
+}
+
+textarea {
+  @apply h-[100px];
+}
+
+.input-containt .input-name:hover,
+.input-phone:hover,
+.input-email:hover,
+.input-message:hover {
+  @apply p-[5px];
+}
+
+.input-containt .input-name input:hover,
+.input-phone input:hover,
+.input-email input:hover,
+.input-message textarea:hover {
+  @apply border border-solid border-white;
+}
+
+@media (min-width: 220px) and (max-width: 1050px) {
+  .input-name,
+  .input-phone {
+    @apply inline-block mb-[25px] w-full bg-[#2d2d2e] transition-all duration-1000;
+  }
+}

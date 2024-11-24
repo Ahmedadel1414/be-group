@@ -1,0 +1,21 @@
+.footer-logo {
+  @apply w-1/2 m-auto pt-20;
+}
+.footer-logo img {
+  @apply w-[25%] m-auto min-w-[80px];
+}
+.footer-logos {
+  @apply w-full m-auto pt-6 text-center;
+}
+.footer-logos img {
+  @apply inline-block px-5 w-[8%] min-w-[80px];
+}
+.last-p {
+  @apply m-auto text-center pt-5;
+}
+
+@media (min-width: 220px) and (max-width: 420px) {
+  .last-p a {
+    @apply inline-block text-[10px];
+  }
+}

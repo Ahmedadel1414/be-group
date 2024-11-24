@@ -1,0 +1,14 @@
+.our-services-container {
+  @apply grid gap-24 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] py-36;
+}
+.our-services-button {
+  @apply text-center pb-36
+}
+.our-services-button a{
+  @apply text-[20px] 
+}
+@media (min-width: 220px) and (max-width: 420px) {
+  .our-services-container {
+    @apply grid-cols-[repeat(auto-fill,minmax(150px,1fr))];
+  }
+}

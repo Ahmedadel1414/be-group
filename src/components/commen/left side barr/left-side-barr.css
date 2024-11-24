@@ -1,0 +1,22 @@
+.left-nav-bar {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  left: 20px;
+}
+.left-nav-icons {
+  @apply bg-black text-main-color py-[5px] px-[2px] rounded-md w-[50px] h-[50px] mb-5;
+}
+.left-nav-links {
+  @apply flex  justify-center items-center border-[0] border-solid border-white rounded-xl w-full h-full;
+}
+.left-nav-links1:hover {
+  @apply border rounded-md text-white;
+}
+
+.left-nav-icons2:hover {
+  @apply text-white bg-[#128c7e] border-none;
+}
+.left-nav-icons3:hover {
+  @apply text-white bg-[#26d466] border-none;
+}

@@ -1,0 +1,37 @@
+.video-container {
+  @apply absolute w-full h-[100vh] -z-10 top-0;
+}
+
+.video-container video {
+  @apply relative w-full h-[100vh] object-cover;
+}
+
+.video-container::after {
+  @apply content-[""] absolute w-full h-full top-0 left-0 bg-[rgba(26,26,32,0.65)];
+}
+
+.landing-content {
+  @apply text-center w-full h-[95vh];
+}
+
+.landing-text {
+  @apply w-[65%] h-[60%] m-auto content-center;
+}
+
+@media (min-width: 220px) and (max-width: 320px) {
+  .landing-text {
+    @apply -translate-y-40;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 457px) {
+  .landing-text {
+    @apply -translate-y-40;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 704px) {
+  .landing-text {
+    @apply -translate-y-40;
+  }
+}

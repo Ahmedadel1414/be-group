@@ -1,0 +1,27 @@
+.footer-container {
+  @apply pt-16;
+}
+.footer-contact {
+  @apply flex justify-center gap-20 text-[20px] text-white;
+}
+.footer-contact h1 {
+  @apply pb-3 ml-3 text-main-color;
+}
+.footer-contact a {
+  @apply inline-block;
+}
+@media (min-width: 220px) and (max-width: 320px) {
+  .footer-contact {
+    @apply flex-col text-center justify-center gap-5 text-[14px] text-white;
+  }
+}
+@media (min-width: 321px) and (max-width: 620px) {
+  .footer-contact {
+    @apply flex-col text-center justify-center gap-5 text-[18px] text-white;
+  }
+}
+@media (min-width: 621px) and (max-width: 1050px) {
+  .footer-contact {
+    @apply flex-col text-center justify-center gap-5 text-[25px] text-white;
+  }
+}

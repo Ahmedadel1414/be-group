@@ -1,0 +1,42 @@
+.value-title-container {
+  @apply relative flex flex-wrap justify-center gap-10 text-[20px] pt-16 pb-5;
+}
+.value-title-container h1 {
+  @apply cursor-pointer;
+}
+.value-title-container::after {
+  @apply absolute content-[""] w-[85%] h-[1px] opacity-50 bg-text-color bottom-0 left-1/2 -translate-x-1/2 z-40;
+}
+.value-container {
+  @apply my-32 bg-[#17171c] text-text-color w-[99%] m-auto;
+}
+.value-container h1:hover {
+  @apply text-white;
+}
+.value-text {
+  @apply text-center content-center w-[65%] m-auto pt-14 pb-28 text-[20px] ;
+}
+.value-under-line {
+  @apply relative text-white;
+}
+.value-under-line::before {
+  @apply absolute content-[""] -bottom-[22.5px] z-50 left-0 bg-main-color w-0 h-2 translate-x-[99%] animate-[line_1s_forwards];
+}
+.value-under-line::after {
+  @apply absolute content-[""] -bottom-[22.5px] z-50 right-0 bg-main-color w-0 h-2 -translate-x-[100%] animate-[line_1s_forwards];
+}
+
+@keyframes line{
+  0% {
+    @apply w-0
+  }
+  100% {
+    @apply w-1/2
+  }
+}
+
+@media (min-width: 220px) and (max-width: 520px) {
+  .value-text {
+    @apply text-[15px];
+  }
+}

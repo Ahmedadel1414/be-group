@@ -1,0 +1,48 @@
+.achievements-container {
+  @apply grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center pb-40 pt-20 gap-10;
+}
+.achievements-container div {
+  @apply bg-black shadow-[5px_5px_5px_5px] rounded-[10px] py-14;
+}
+.achievements-container h1 {
+  @apply text-main-color text-[60px];
+}
+.achievements-container p {
+  @apply text-text-color text-[25px];
+}
+
+@media (min-width: 220px) and (max-width: 320px) {
+  .achievements-container {
+    @apply grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-5;
+  }
+  .achievements-container div {
+    @apply bg-black rounded-[10px];
+  }
+  .achievements-container h1 {
+    @apply text-[30px];
+  }
+  .achievements-container p {
+    @apply text-[15px];
+  }
+  .achievements-title span {
+    @apply text-[25px];
+  }
+}
+
+@media (min-width: 321px) and (max-width: 420px) {
+  .achievements-container {
+    @apply grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-5;
+  }
+  .achievements-container div {
+    @apply bg-black rounded-[10px];
+  }
+  .achievements-container h1 {
+    @apply text-[30px];
+  }
+  .achievements-container p {
+    @apply text-[15px];
+  }
+  .achievements-title span {
+    @apply text-[25px];
+  }
+}

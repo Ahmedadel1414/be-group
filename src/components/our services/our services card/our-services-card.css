@@ -1,0 +1,18 @@
+.oue-services-card {
+  @apply relative p-10 z-50 cursor-pointer;
+}
+.oue-services-card h1 {
+  @apply text-white pb-5;
+}
+.oue-services-card p {
+  @apply pb-5;
+}
+.card-link {
+  @apply w-full;
+}
+.card-link a {
+  @apply relative float-right text-[15px] inline-block text-main-color translate-y-[100%] border-t-2 border-solid border-t-main-color;
+}
+.card-link a::before {
+  @apply absolute content-[""] bg-main-color w-[30%] -top-[11px] -right-1 h-[2px] rotate-45;
+}

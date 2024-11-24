@@ -1,0 +1,10 @@
+.main-nav {
+  @apply absolute right-0 w-[50.1%] h-full bg-[#1b1b21] text-[70px] text-white font-extrabold text-center content-center;
+}
+
+.main-nav-links {
+  @apply block transition-all duration-1000;
+}
+.main-nav-links:hover {
+  @apply text-main-color;
+}
