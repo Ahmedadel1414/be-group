@@ -1,4 +1,4 @@
-import ourClients from "../../../../../Public/menu/OurClients.jpg";
+import ourClients from "/menu/OurClients.jpg";
 
 const OurClients = () => {
   return (

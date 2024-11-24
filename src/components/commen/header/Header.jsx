@@ -1,4 +1,4 @@
-import headerLogo from "../../../../Public/header/20879.webp";
+import headerLogo from "/header/20879.webp";
 import "./header.css";
 
 const Header = () => {

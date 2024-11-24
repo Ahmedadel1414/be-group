@@ -1,4 +1,4 @@
-import aboutUsImg from "../../../Public/about us/34921.webp";
+import aboutUsImg from "/about us/34921.webp";
 import Stroke from "../commen/StrokeText";
 import "./about-us.css";
 

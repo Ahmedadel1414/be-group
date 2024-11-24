@@ -1,8 +1,8 @@
 import FooterLinks from "./footer-links/FooterLinks";
-import logo from "../../../../Public/header/20879.webp";
-import logo1 from "../../../../Public/footer/1.png";
-import logo2 from "../../../../Public/footer/2.png";
-import logo3 from "../../../../Public/footer/3.png";
+import logo from "/header/20879.webp";
+import logo1 from "/footer/1.png";
+import logo2 from "/footer/2.png";
+import logo3 from "/footer/3.png";
 
 import "./footer.css";
 

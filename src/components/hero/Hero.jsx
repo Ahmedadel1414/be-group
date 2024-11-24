@@ -1,5 +1,5 @@
 import "./hero.css";
-import landingBage from "../../../Public/landengbage/landingBage.mp4";
+import landingBage from "/landengbage/landingBage.mp4";
 import Button from "../commen/Button";
 import Stroke from "../commen/StrokeText";
 import { FaArrowRight } from "react-icons/fa";

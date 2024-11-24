@@ -1,4 +1,4 @@
-import getInTuch from "../../../../../Public/menu/getInTuch.webp";
+import getInTuch from "/menu/getInTuch.webp";
 
 const GetInTuch = () => {
   return (
