@@ -12,10 +12,8 @@ const ValueTitle = () => {
           {valueTitle.map((title, index) => (
             <h1
               key={index}
-              className={`${activeIndex === index ? "value-under-line" : ""} `}
-              onClick={() => {
-                setActiveIndex(index);
-              }}
+              className={`${activeIndex === index ? "value-under-line" : ""}`}
+              onClick={() => setActiveIndex(index)}
             >
               {title}
             </h1>

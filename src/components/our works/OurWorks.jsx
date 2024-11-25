@@ -1,16 +1,18 @@
-import ourWorksImg1 from "/ourWorks/1.webp";
-import ourWorksImg2 from "/ourWorks/2.webp";
-import ourWorksImg3 from "/ourWorks/3.webp";
-import ourWorksImg4 from "/ourWorks/4.webp";
-import ourWorksImg5 from "/ourWorks/5.webp";
-import ourWorksImg6 from "/ourWorks/6.webp";
-import ourWorksImg7 from "/ourWorks/7.webp";
-import ourWorksImg8 from "/ourWorks/8.webp";
-import ourWorksImg9 from "/ourWorks/9.webp";
 import { FaArrowRotateRight } from "react-icons/fa6";
 import Button from "../commen/Button";
 import MainSectionTitle from "../commen/MainSectionTitle";
 import "./our-wordks.css";
+import {
+  ourWorksImg1,
+  ourWorksImg2,
+  ourWorksImg3,
+  ourWorksImg4,
+  ourWorksImg5,
+  ourWorksImg6,
+  ourWorksImg7,
+  ourWorksImg8,
+  ourWorksImg9,
+} from "./ourWorksImges";
 
 const OurWorks = () => {
   return (

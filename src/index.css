@@ -2,19 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply relative bg-[#131314] ;
+  @apply relative bg-[#131314];
 }
 
-body::after {
-  @apply absolute content-[""] top-0 left-[25%] -z-50 h-full w-[1px] bg-[#8f93a5] rotate-3 opacity-25;
-}
-
-body::before {
-  @apply absolute content-[""] top-0 right-[25%] -z-50 h-full w-[1px] bg-[#8f93a5] rotate-3 opacity-25;
-}
-
-.container{
-  @apply w-[80%] m-auto
+.container {
+  @apply w-[80%] m-auto;
 }
 
 /* start commen button */
@@ -100,17 +92,21 @@ body::before {
 /* end commen menu */
 
 /* start main section title */
-.main-section-title-container{
-  @apply w-full m-auto text-center
+.main-section-title-container {
+  @apply w-full m-auto text-center;
 }
-.main-section-title{
-  @apply inline-block text-[50px] font-bold pr-5 text-transparent opacity-50; 
-  -webkit-text-stroke: .5px #fff;
+.main-section-title {
+  @apply inline-block text-[50px] font-bold pr-5 text-transparent opacity-50;
+  -webkit-text-stroke: 0.5px #fff;
 }
-.main-section-title-border{
-  @apply relative z-30 inline-block text-[50px] text-white font-bold
+.main-section-title-border {
+  @apply relative z-30 inline-block text-[50px] text-white font-bold;
 }
-.main-section-title-border::before{
-  @apply absolute content-[""] -z-30 bottom-[5px] left-0 bg-main-color h-5 w-full
+.main-section-title-border::before {
+  @apply absolute content-[""] -z-30 bottom-[5px] left-0 bg-main-color h-5 w-full;
 }
 /* end main section title */
+
+.scroll-text {
+  @apply transition-all duration-300;
+}

@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const Button = ({ padding, icon, text }) => {
   return (
     <>
@@ -8,9 +10,9 @@ const Button = ({ padding, icon, text }) => {
             <i>{icon}</i>
           </a>
         </button>
-        <span className="btn-border-container">
-          <div className="btn-border btn-border1"></div>
-          <div className="btn-border "></div>
+        <span className="inline-block ">
+          <div className="btn-border btn-border1 "></div>
+          <div className="btn-border"></div>
         </span>
       </span>
     </>

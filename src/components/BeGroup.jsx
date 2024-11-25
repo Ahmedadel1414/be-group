@@ -10,10 +10,12 @@ import OurServices from "./our services/OurServices";
 import Achievements from "./Achievements/Achievements";
 import OurWorks from "./our works/OurWorks";
 import OurClients from "./our clients/OurClients";
+import AnimationOnScroll from "./commen/AnimationOnScroll";
 
 const BeGroup = () => {
   return (
     <>
+      <AnimationOnScroll />
       {/* <Nav /> */}
       <Header />
       <Hero />

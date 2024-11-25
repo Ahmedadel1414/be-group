@@ -4,9 +4,6 @@ import { FaAngleRight } from "react-icons/fa";
 import "./our-clients.css";
 import {
   client1,
-  client10,
-  client11,
-  client12,
   client2,
   client3,
   client4,
@@ -15,6 +12,9 @@ import {
   client7,
   client8,
   client9,
+  client10,
+  client11,
+  client12,
 } from "../../../public/ourClients";
 
 const OurClients = () => {
