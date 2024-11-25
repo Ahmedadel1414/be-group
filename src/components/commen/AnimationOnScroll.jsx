@@ -9,9 +9,9 @@ const AnimationOnScroll = () => {
       const scrollCount = window.scrollY;
       scrollText.forEach((scrollElement) => {
         if (scrollCount > scrollAnimation) {
-          scrollElement.style.transform = "translateY(10rem)";
+          scrollElement.style.transform = "translateY(2rem)";
         } else if (scrollCount < scrollAnimation) {
-          scrollElement.style.transform = "translateY(-10rem)";
+          scrollElement.style.transform = "translateY(-2rem)";
         }
         setTimeout(() => {
           scrollElement.style.transform = "translateY(0rem)";
