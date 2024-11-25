@@ -108,5 +108,5 @@ body {
 /* end main section title */
 
 .scroll-text {
-  @apply transition-all duration-300;
+  @apply transition-all duration-[400ms] ;
 }

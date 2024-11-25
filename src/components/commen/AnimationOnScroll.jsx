@@ -4,9 +4,9 @@ const AnimationOnScroll = () => {
   const [scrollAnimation, setScrollAnimation] = useState(0);
 
   useEffect(() => {
-    const scrollText = document.querySelectorAll(".scroll-text");
-    const scrollCount = window.scrollY;
     const handleScroll = () => {
+      const scrollText = document.querySelectorAll(".scroll-text");
+      const scrollCount = window.scrollY;
       scrollText.forEach((scrollElement) => {
         if (scrollCount > scrollAnimation) {
           scrollElement.style.transform = "translateY(10rem)";
@@ -15,7 +15,7 @@ const AnimationOnScroll = () => {
         }
         setTimeout(() => {
           scrollElement.style.transform = "translateY(0rem)";
-        }, 100);
+        }, 200);
       });
       setScrollAnimation(scrollCount);
     };
