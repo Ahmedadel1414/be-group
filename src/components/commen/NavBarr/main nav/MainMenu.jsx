@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { isNavbarHiddenContext } from "../../../BeGroup";
 import "./main-menu.css";
 
 const MainMenu = () => {
+  // for mobile nav barr
   const [mobileScreen, setMobileScreen] = useState();
   const mainNav = document.querySelector(".main-nav");
 
   useEffect(() => {
     const handleMobileWidth = () => {
       setMobileScreen(window.innerWidth < 990);
-      testt();
+      mainNavResize();
     };
     window.addEventListener("resize", handleMobileWidth);
   });
 
-  const testt = () => {
+  const mainNavResize = () => {
     if (mobileScreen) {
       mainNav.style.width = "100%";
       mainNav.style.fontSize = "40px";
@@ -22,10 +24,28 @@ const MainMenu = () => {
       mainNav.style.fontSize = "70px";
     }
   };
+  // for mobile nav barr
+
+  const setIsNavbarHidden = useContext(isNavbarHiddenContext);
+
+  const handleNavClick = () => {
+    setIsNavbarHidden((prev) => !prev);
+  };
 
   return (
     <>
       <section className="main-nav">
+        <div
+          className="nav-burger-menu"
+          onClick={() => {
+            handleNavClick();
+          }}
+        >
+          <div className=" burder-menu1 h-[4px] w-[20px] bg-white mb-[7px] transition-all duration-700 "></div>
+          <div className=" burder-menu2 h-[4px] w-[35px] bg-white mb-[7px] "></div>
+          <div className=" burder-menu3 h-[4px] w-[25px] bg-white transition-all duration-700 "></div>
+        </div>
+
         <div className=" absolute -left-[5px] top-[50px] -rotate-90">
           <span className="nav-line"></span>
           <span className="text-[15px] text-text-color">since</span>

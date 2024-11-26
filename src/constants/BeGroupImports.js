@@ -1,0 +1,13 @@
+export { default as AboutUs } from "../components/about us/AboutUs";
+export { default as Contact } from "../components/commen/contact/Contact";
+export { default as Header } from "../components/commen/header/Header";
+export { default as LeftSideBarr } from "../components/commen/left side barr/LeftSideBarr";
+export { default as Footer } from "../components/commen/footer/Footer";
+export { default as Nav } from "../components/commen/NavBarr/Nav";
+export { default as Hero } from "../components/hero/Hero";
+export { default as Value } from "../components/value of section/Value";
+export { default as OurServices } from "../components//our services/OurServices";
+export { default as Achievements } from "../components//Achievements/Achievements";
+export { default as OurWorks } from "../components//our works/OurWorks";
+export { default as OurClients } from "../components//our clients/OurClients";
+export { default as AnimationOnScroll } from "../components//commen/AnimationOnScroll";

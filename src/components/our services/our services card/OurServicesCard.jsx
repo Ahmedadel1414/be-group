@@ -9,8 +9,10 @@ const OurServicesCard = ({ cardTitle, textParagraphTitle, textParagraph }) => {
           <span className=" text-main-color">{textParagraphTitle}</span>
           {textParagraph}
         </p>
-        <div className="btn-border btn-border1"></div>
-        <div className="btn-border btn-border2"></div>
+        <span className="inline-block border-container">
+          <div className="btn-border"></div>
+          <div className="btn-border btn-border2"></div>
+        </span>
         <div className="card-link">
           <a href="#">More Details</a>
         </div>

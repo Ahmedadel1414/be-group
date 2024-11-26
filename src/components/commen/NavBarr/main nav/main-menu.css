@@ -7,3 +7,18 @@
 .main-nav-links:hover {
   @apply text-main-color;
 }
+.nav-burger-menu{
+  @apply absolute right-10 top-10 cursor-pointer 
+}
+.nav-burger-menu div{
+  @apply transition-all duration-500
+}
+.nav-burger-menu:hover :first-child{
+  @apply w-[25px]
+}
+.nav-burger-menu:hover :last-child{
+  @apply w-[20px]
+}
+.nav-burger-menu:hover div {
+  @apply bg-main-color
+}

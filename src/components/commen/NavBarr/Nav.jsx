@@ -7,7 +7,6 @@ import Servieces from "./servieces/Servieces";
 
 const Nav = () => {
   const [mobileScreen, setMobileScreen] = useState();
-  // main menu full width
 
   useEffect(() => {
     const handleMobileScreen = () => {
@@ -22,7 +21,7 @@ const Nav = () => {
 
   return (
     <>
-      <section className="relative w-full h-[100vh] z-50  ">
+      <section className="relative w-full h-[100vh] z-50 overflow-hidden ">
         {mobileScreen ? (
           <MainMenu />
         ) : (

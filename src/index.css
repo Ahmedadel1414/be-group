@@ -26,11 +26,14 @@ body {
 .commen-btn:hover {
   @apply animate-[btn-animation_1s_forwards];
 }
-.btn-border {
-  @apply absolute z-10 w-full h-full bg-transparent border-[1px] border-solid border-text-color opacity-30 left-0 top-0;
+.border-container {
+  @apply absolute z-10 w-full h-full left-0 top-0 transition-all duration-1000;
 }
-.btn-border1 {
-  @apply left-[1px] -top-[0.2px] rotate-[6deg];
+.btn-border {
+  @apply absolute w-full h-full border-[1px] border-solid bg-transparent border-text-color  opacity-30;
+}
+.btn-border2 {
+  @apply rotate-[6deg];
 }
 /* end commen button */
 
@@ -108,5 +111,29 @@ body {
 /* end main section title */
 
 .scroll-text {
-  @apply transition-all duration-[400ms] ;
+  @apply transition-all duration-[400ms];
 }
+
+/* navbarr animate */
+
+.main-nav,
+.nav-servieces {
+  @apply translate-y-0 animate-[animateMainNav_1s_reverse];
+}
+
+.nav-imgs {
+  @apply translate-x-0 animate-[animateOurClient_1s_reverse];
+}
+
+@keyframes animateMainNav {
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes animateOurClient {
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* navbarr animate */
