@@ -1,29 +1,26 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useContext } from "react";
+import { chickNavWidth } from "../Nav";
 import { isNavbarHiddenContext } from "../../../BeGroup";
 import "./main-menu.css";
 
 const MainMenu = () => {
   // for mobile nav barr
-  const [mobileScreen, setMobileScreen] = useState();
-  const mainNav = document.querySelector(".main-nav");
+  const test = useContext(chickNavWidth);
 
   useEffect(() => {
-    const handleMobileWidth = () => {
-      setMobileScreen(window.innerWidth < 990);
-      mainNavResize();
+    const mainNav = document.querySelector(".main-nav");
+    const mainNavResize = () => {
+      if (test) {
+        mainNav.style.width = "100%";
+        mainNav.style.fontSize = "40px";
+      } else {
+        mainNav.style.width = "50.1%";
+        mainNav.style.fontSize = "70px";
+      }
     };
-    window.addEventListener("resize", handleMobileWidth);
+    mainNavResize();
   });
 
-  const mainNavResize = () => {
-    if (mobileScreen) {
-      mainNav.style.width = "100%";
-      mainNav.style.fontSize = "40px";
-    } else {
-      mainNav.style.width = "50.1%";
-      mainNav.style.fontSize = "70px";
-    }
-  };
   // for mobile nav barr
 
   const setIsNavbarHidden = useContext(isNavbarHiddenContext);

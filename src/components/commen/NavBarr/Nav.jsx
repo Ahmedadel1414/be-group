@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import GetInTuch from "./get in tuch/GetInTuch";
 import MainMenu from "./main nav/MainMenu";
 import MenuContact from "./nav contact/MenuContact";
 import OurClients from "./ourClients/OurClients";
 import Servieces from "./servieces/Servieces";
 
+export const chickNavWidth = createContext();
+
 const Nav = () => {
-  const [mobileScreen, setMobileScreen] = useState();
+  const [mobileScreen, setMobileScreen] = useState(window.innerWidth < 990);
 
   useEffect(() => {
     const handleMobileScreen = () => {
@@ -23,14 +25,18 @@ const Nav = () => {
     <>
       <section className="relative w-full h-[100vh] z-50 overflow-hidden ">
         {mobileScreen ? (
-          <MainMenu />
+          <chickNavWidth.Provider value={mobileScreen}>
+            <MainMenu />
+          </chickNavWidth.Provider>
         ) : (
           <>
-            <Servieces />
-            <OurClients />
-            <GetInTuch />
-            <MenuContact />
-            <MainMenu />
+            <chickNavWidth.Provider value={mobileScreen}>
+              <Servieces />
+              <OurClients />
+              <GetInTuch />
+              <MenuContact />
+              <MainMenu />
+            </chickNavWidth.Provider>
           </>
         )}
       </section>
