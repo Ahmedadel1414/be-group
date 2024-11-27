@@ -5,7 +5,6 @@ import {
   AnimationOnScroll,
   Contact,
   Footer,
-  Header,
   Hero,
   LeftSideBarr,
   Nav,
@@ -26,7 +25,6 @@ const BeGroup = () => {
         <>
           <isNavbarHiddenContext.Provider value={setIsNavbarHidden}>
             <AnimationOnScroll />
-            <Header />
             <Hero />
             <LeftSideBarr />
             <AboutUs />

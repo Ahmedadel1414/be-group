@@ -20,7 +20,7 @@ import {
 const OurClients = () => {
   return (
     <>
-      <section className="our-clients-container">
+      <section className="our-clients-container ">
         <MainSectionTitle mainTitle="Our" mainTitle2="Clients" />
         <div className="our-clients container">
           <div className="btn ">

@@ -3,11 +3,13 @@ import landingBage from "/landengbage/landingBage.mp4";
 import Button from "../commen/Button";
 import Stroke from "../commen/StrokeText";
 import { FaArrowRight } from "react-icons/fa";
+import Header from "../commen/header/Header";
 
 const Hero = () => {
   return (
     <>
       <section className="landing-bage">
+        <Header />
         <div className="video-container">
           <video src={landingBage} playsInline autoPlay muted loop></video>
         </div>

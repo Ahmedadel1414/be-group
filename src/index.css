@@ -116,24 +116,4 @@ body {
 
 /* navbarr animate */
 
-.main-nav,
-.nav-servieces {
-  @apply translate-y-0 animate-[animateMainNav_1s_reverse];
-}
-
-.nav-imgs {
-  @apply translate-x-0 animate-[animateOurClient_1s_reverse];
-}
-
-@keyframes animateMainNav {
-  100% {
-    transform: translateY(100%);
-  }
-}
-
-@keyframes animateOurClient {
-  100% {
-    transform: translateX(100%);
-  }
-}
 /* navbarr animate */

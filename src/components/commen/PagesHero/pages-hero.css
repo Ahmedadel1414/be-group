@@ -1,0 +1,29 @@
+.pages-hero-img {
+  @apply w-full h-[650px] bg-[url("/footer/footer.jpg")] bg-cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+.pages-hero-title {
+  @apply text-[120px] font-extrabold text-main-color;
+}
+.under-line {
+  @apply relative z-30 text-[30px] text-white;
+}
+.under-line::before {
+  @apply absolute content-[""] -z-30 bottom-[5px] right-0 bg-main-color h-2 w-[97%];
+}
+.pages-hero-paragraph {
+  @apply text-text-color text-[30px] mr-96;
+}
+
+@media (min-width: 220px) and (max-width: 1059px) {
+  .pages-hero-paragraph {
+    @apply mr-0;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 450px) {
+  .pages-hero-title {
+    @apply text-[60px];
+  }
+}

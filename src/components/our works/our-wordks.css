@@ -1,3 +1,6 @@
+.our-works-container{
+  @apply pt-32
+}
 .our-works-img-container {
   @apply grid gap-14 grid-cols-[repeat(auto-fill,minmax(400px,1fr))] py-20;
 }

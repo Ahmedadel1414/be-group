@@ -1,6 +1,5 @@
 export { default as AboutUs } from "../components/about us/AboutUs";
 export { default as Contact } from "../components/commen/contact/Contact";
-export { default as Header } from "../components/commen/header/Header";
 export { default as LeftSideBarr } from "../components/commen/left side barr/LeftSideBarr";
 export { default as Footer } from "../components/commen/footer/Footer";
 export { default as Nav } from "../components/commen/NavBarr/Nav";

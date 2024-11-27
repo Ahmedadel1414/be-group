@@ -1,11 +1,11 @@
 .value-title-container {
-  @apply relative flex flex-wrap justify-center gap-10 text-[20px] pt-16 pb-5;
+  @apply relative flex flex-wrap justify-center gap-10 text-[23px] pt-16 pb-5;
 }
 .value-title-container h1 {
   @apply cursor-pointer;
 }
 .value-title-container::after {
-  @apply absolute content-[""] w-[85%] h-[1px] opacity-50 bg-text-color bottom-0 left-1/2 -translate-x-1/2 z-40;
+  @apply absolute content-[""] w-[95%] h-[1px] opacity-50 bg-text-color bottom-0 left-1/2 -translate-x-1/2 z-40;
 }
 .value-container {
   @apply my-32 bg-[#17171c] text-text-color w-[99%] m-auto;

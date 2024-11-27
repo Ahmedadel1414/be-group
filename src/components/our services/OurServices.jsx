@@ -6,7 +6,7 @@ import "./our-services.css";
 const OurServices = () => {
   return (
     <>
-      <section>
+      <section className="pt-32">
         <MainSectionTitle mainTitle="Our" mainTitle2="Services" />
         <div className="our-services-container container">
           <OurServicesCard
