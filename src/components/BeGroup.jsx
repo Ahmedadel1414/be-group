@@ -1,4 +1,5 @@
-import { useState, createContext } from "react";
+import { createContext, useState } from "react";
+
 import {
   AboutUs,
   Achievements,
@@ -14,16 +15,16 @@ import {
   Value,
 } from "../constants/BeGroupImports";
 
-export const isNavbarHiddenContext = createContext();
+export const chickIsNavbarHidden = createContext();
 
 const BeGroup = () => {
   const [isNavbarHidden, setIsNavbarHidden] = useState(true);
 
   return (
     <>
-      {isNavbarHidden ? (
+      {isNavbarHidden == true ? (
         <>
-          <isNavbarHiddenContext.Provider value={setIsNavbarHidden}>
+          <chickIsNavbarHidden.Provider value={setIsNavbarHidden}>
             <AnimationOnScroll />
             <Hero />
             <LeftSideBarr />
@@ -35,12 +36,12 @@ const BeGroup = () => {
             <OurWorks />
             <Contact />
             <Footer />
-          </isNavbarHiddenContext.Provider>
+          </chickIsNavbarHidden.Provider>
         </>
       ) : (
-        <isNavbarHiddenContext.Provider value={setIsNavbarHidden}>
+        <chickIsNavbarHidden.Provider value={setIsNavbarHidden}>
           <Nav />
-        </isNavbarHiddenContext.Provider>
+        </chickIsNavbarHidden.Provider>
       )}
     </>
   );

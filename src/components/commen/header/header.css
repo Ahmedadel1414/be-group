@@ -1,23 +1,15 @@
 .header-container {
-  @apply flex items-center justify-center z-10 w-full h-28;
+  @apply flex items-center justify-between  z-10 w-full h-28;
 }
-
-.header-logo-container {
-  @apply flex-auto;
-}
-
 .header-logo {
   @apply max-w-20 min-w-20 ml-12 cursor-pointer;
 }
-
 .header-burger-menu {
-  @apply mr-12 cursor-pointer;
+  @apply  mr-12 cursor-pointer;
 }
-
 .header-burger-menu:hover .burder-menu1 {
   @apply w-[25px];
 }
-
 .header-burger-menu:hover .burder-menu3 {
   @apply w-[20px];
 }

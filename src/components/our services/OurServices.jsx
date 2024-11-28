@@ -3,6 +3,7 @@ import OurServicesCard from "./our services card/OurServicesCard";
 import Button from "../commen/Button";
 import { FaArrowRotateRight } from "react-icons/fa6";
 import "./our-services.css";
+import { Link } from "react-router-dom";
 const OurServices = () => {
   return (
     <>
@@ -56,15 +57,17 @@ const OurServices = () => {
           />
         </div>
         <div className="our-services-button">
-          <Button
-            text="Services"
-            padding="10px 30px"
-            icon={
-              <FaArrowRotateRight
-                style={{ display: "inline-block", marginLeft: "5px" }}
-              />
-            }
-          />
+          <Link to="/our-services">
+            <Button
+              text="Services"
+              padding="10px 30px"
+              icon={
+                <FaArrowRotateRight
+                  style={{ display: "inline-block", marginLeft: "5px" }}
+                />
+              }
+            />
+          </Link>
         </div>
       </section>
     </>

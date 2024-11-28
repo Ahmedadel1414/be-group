@@ -13,6 +13,7 @@ import {
   ourWorksImg8,
   ourWorksImg9,
 } from "./ourWorksImges";
+import { Link } from "react-router-dom";
 
 const OurWorks = () => {
   return (
@@ -69,15 +70,17 @@ const OurWorks = () => {
           </div>
         </div>
         <div className="our-services-button">
-          <Button
-            text="Load more"
-            padding="10px 30px"
-            icon={
-              <FaArrowRotateRight
-                style={{ display: "inline-block", marginLeft: "5px" }}
-              />
-            }
-          />
+          <Link to="/our-works">
+            <Button
+              text="Our Works"
+              padding="10px 30px"
+              icon={
+                <FaArrowRotateRight
+                  style={{ display: "inline-block", marginLeft: "5px" }}
+                />
+              }
+            />
+          </Link>
         </div>
       </section>
     </>

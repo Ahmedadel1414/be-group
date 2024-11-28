@@ -4,6 +4,7 @@ import Button from "../commen/Button";
 import Stroke from "../commen/StrokeText";
 import { FaArrowRight } from "react-icons/fa";
 import Header from "../commen/header/Header";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,15 +19,17 @@ const Hero = () => {
             <Stroke text="WE PROVIDE DIGITAl MARKTING" />
           </div>
           <div className="hero-btn">
-            <Button
-              padding={"10px 15px"}
-              text="Contact Us"
-              icon={
-                <FaArrowRight
-                  style={{ display: "inline", marginLeft: "10px" }}
-                />
-              }
-            />
+            <Link to="/our-contacts">
+              <Button
+                padding={"10px 15px"}
+                text="Contact Us"
+                icon={
+                  <FaArrowRight
+                    style={{ display: "inline", marginLeft: "10px" }}
+                  />
+                }
+              />
+            </Link>
           </div>
         </div>
       </section>

@@ -1,8 +1,8 @@
-import { isNavbarHiddenContext } from "../BeGroup";
 import { useContext } from "react";
+import { chickIsNavbarHidden } from "../BeGroup";
 
 const BurgerMenu = ({ className }) => {
-  const setIsNavbarHidden = useContext(isNavbarHiddenContext);
+  const setIsNavbarHidden = useContext(chickIsNavbarHidden);
 
   const handleNavClick = () => {
     setIsNavbarHidden((prev) => !prev);
