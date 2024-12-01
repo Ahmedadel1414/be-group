@@ -1,9 +1,4 @@
-import {
-  AnimationOnScroll,
-  Contact,
-  Footer,
-  OurClients,
-} from "../constants/BeGroupImports";
+import { AnimationOnScroll, OurClients } from "../constants/BeGroupImports";
 import OurContact from "./commen/contact/our contact/OurContact";
 import PagesHero from "./commen/PagesHero/PagesHero";
 
@@ -14,8 +9,6 @@ const BeGroupContactUs = () => {
       <PagesHero />
       <OurContact />
       <OurClients />
-      <Contact />
-      <Footer />
     </>
   );
 };

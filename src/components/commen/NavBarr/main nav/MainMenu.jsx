@@ -3,6 +3,7 @@ import { chickNavWidth } from "../Nav";
 import { Link } from "react-router-dom";
 import "./main-menu.css";
 import BurgerMenu from "../../BurgerMenu";
+import { chickIsNavvHidden } from "../../../../App";
 
 const MainMenu = () => {
   // for mobile nav barr
@@ -27,6 +28,8 @@ const MainMenu = () => {
 
   // for mobile nav barr
 
+  const setIsNavHidden = useContext(chickIsNavvHidden);
+
   return (
     <>
       <section className="main-nav animate-up">
@@ -36,19 +39,49 @@ const MainMenu = () => {
           <span className="text-[15px] text-text-color">since</span>
         </div>
         <nav>
-          <Link to="/" className="main-nav-links ">
+          <Link
+            to="/"
+            className="main-nav-links"
+            onClick={() => {
+              setIsNavHidden(true);
+            }}
+          >
             Home
           </Link>
-          <Link to="/about-us" className="main-nav-links ">
+          <Link
+            to="/about-us"
+            className="main-nav-links"
+            onClick={() => {
+              setIsNavHidden(true);
+            }}
+          >
             About Us
           </Link>
-          <Link to="/our-services" className="main-nav-links">
+          <Link
+            to="/our-services"
+            className="main-nav-links"
+            onClick={() => {
+              setIsNavHidden(true);
+            }}
+          >
             Services
           </Link>
-          <Link to="our-works" className="main-nav-links ">
+          <Link
+            to="our-works"
+            className="main-nav-links1"
+            onClick={() => {
+              setIsNavHidden(true);
+            }}
+          >
             Portfolio
           </Link>
-          <Link to="/our-contacts" className="main-nav-links ">
+          <Link
+            to="/our-contacts"
+            className="main-nav-links"
+            onClick={() => {
+              setIsNavHidden(true);
+            }}
+          >
             Contact Us
           </Link>
         </nav>

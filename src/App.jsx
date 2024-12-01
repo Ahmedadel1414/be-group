@@ -1,40 +1,34 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BeGroup from "./components/BeGroup";
-import BeGroupAboutUs from "./components/BeGroupAboutUs";
-import BeGroupServices from "./components/BeGroupServices";
-import BeGroupOurWorks from "./components/BeGroupOurWorks";
-import BeGroupContactUs from "./components/BeGroupContactUs";
+import { createContext, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Contact from "./components/commen/contact/Contact";
+import Footer from "./components/commen/footer/Footer";
+import Header from "./components/commen/header/Header";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <BeGroup />,
-    errorElement: <h1>404 Not found</h1>,
-  },
-  {
-    path: "/about-us",
-    element: <BeGroupAboutUs />,
-  },
-  {
-    path: "/our-services",
-    element: <BeGroupServices />,
-  },
-  {
-    path: "/our-works",
-    element: <BeGroupOurWorks />,
-  },
-  {
-    path: "/our-contacts",
-    element: <BeGroupContactUs />,
-  },
-]);
+import Nav from "./components/commen/NavBarr/Nav";
+
+const chickIsNavvHidden = createContext();
 
 function App() {
+  const [isNavHidden, setIsNavHidden] = useState(true);
+
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <chickIsNavvHidden.Provider value={setIsNavHidden}>
+      {isNavHidden ? (
+        <>
+          <Header />
+          <Outlet />
+          <Contact />
+          <Footer />
+        </>
+      ) : (
+        <>
+          <Nav />
+        </>
+      )}
+    </chickIsNavvHidden.Provider>
   );
 }
 
 export default App;
+
+export { chickIsNavvHidden };
