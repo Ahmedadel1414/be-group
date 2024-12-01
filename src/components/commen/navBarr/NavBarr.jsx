@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./header.css";
+import "./nav-barr.css";
 import headerLogo from "/header/20879.webp";
 import BurgerMenu from "../BurgerMenu";
 
-const Header = () => {
+const NavBarr = () => {
   return (
     <>
       <nav className="header-container">
@@ -18,4 +18,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBarr;

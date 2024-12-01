@@ -1,5 +1,5 @@
-.our-works-container{
-  @apply pt-32
+.our-works-container {
+  @apply pt-32;
 }
 .our-works-img-container {
   @apply grid gap-14 grid-cols-[repeat(auto-fill,minmax(400px,1fr))] py-20;
@@ -13,7 +13,6 @@
 .our-services-button a {
   @apply text-[20px];
 }
-
 @media (min-width: 220px) and (max-width: 320px) {
   .our-works-img-container {
     @apply grid gap-10 grid-cols-[repeat(auto-fill,minmax(150px,1fr))] py-20;
@@ -22,7 +21,6 @@
     @apply text-[25px];
   }
 }
-
 @media (min-width: 321px) and (max-width: 520px) {
   .our-works-img-container {
     @apply grid gap-10 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] py-20;

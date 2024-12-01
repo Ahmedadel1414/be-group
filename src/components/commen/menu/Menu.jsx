@@ -1,13 +1,13 @@
 import { createContext, useEffect, useState } from "react";
-import GetInTuch from "./get in tuch/GetInTuch";
-import MainMenu from "./main nav/MainMenu";
-import MenuContact from "./nav contact/MenuContact";
-import OurClients from "./ourClients/OurClients";
-import Servieces from "./servieces/Servieces";
+import GetInTuch from "./menuGetInTuch/GetInTuch";
+import MainMenu from "./mainMenu/MainMenu";
+import MenuContact from "./menuContact/MenuContact";
+import OurClients from "./menuOurClients/OurClients";
+import Servieces from "./menuServieces/Servieces";
 
 export const chickNavWidth = createContext();
 
-const Nav = () => {
+const Menu = () => {
   const [mobileScreen, setMobileScreen] = useState(window.innerWidth < 990);
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Menu;

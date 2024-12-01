@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { chickNavWidth } from "../Nav";
+import { chickNavWidth } from "../Menu";
 import { Link } from "react-router-dom";
 import "./main-menu.css";
 import BurgerMenu from "../../BurgerMenu";

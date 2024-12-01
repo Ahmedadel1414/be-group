@@ -2,8 +2,8 @@ import { createContext, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Contact from "./components/commen/contact/Contact";
 import Footer from "./components/commen/footer/Footer";
-import Header from "./components/commen/header/Header";
-import Nav from "./components/commen/NavBarr/Nav";
+import NavBarr from "./components/commen/navBarr/NavBarr";
+import Menu from "./components/commen/menu/Menu";
 
 const chickIsNavvHidden = createContext();
 
@@ -14,14 +14,14 @@ function App() {
     <chickIsNavvHidden.Provider value={setIsNavHidden}>
       {isNavHidden ? (
         <>
-          <Header />
+          <NavBarr />
           <Outlet />
           <Contact />
           <Footer />
         </>
       ) : (
         <>
-          <Nav />
+          <Menu />
         </>
       )}
     </chickIsNavvHidden.Provider>

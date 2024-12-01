@@ -1,4 +1,4 @@
-import FooterLinks from "./footer-links/FooterLinks";
+import FooterLinks from "./footerLinks/FooterLinks";
 import logo from "/header/20879.webp";
 import logo1 from "/footer/1.png";
 import logo2 from "/footer/2.png";

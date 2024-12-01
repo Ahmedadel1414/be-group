@@ -3,11 +3,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import BeGroup from "./components/Pages/BeGroup";
-import BeGroupAboutUs from "./components/Pages/BeGroupAboutUs";
-import BeGroupServices from "./components/Pages/BeGroupServices";
-import BeGroupOurWorks from "./components/Pages/BeGroupOurWorks";
-import BeGroupContactUs from "./components/Pages/BeGroupContactUs";
+import BeGroup from "./Pages/BeGroup";
+import BeGroupAboutUs from "./Pages/BeGroupAboutUs";
+import BeGroupServices from "./Pages/BeGroupServices";
+import BeGroupOurWorks from "./Pages/BeGroupOurWorks";
+import BeGroupContactUs from "./Pages/BeGroupContactUs";
 
 const router = createBrowserRouter([
   {
