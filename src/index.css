@@ -61,35 +61,38 @@ body {
 /* end commen text */
 
 /* start commen menu */
-.nav-text-content {
-  @apply m-auto text-[15px] text-text-color;
+.menu-text-content {
+  @apply m-auto text-[20px] text-text-color;
 }
-.nav-text-content a {
+.menu-text-content a {
   @apply mb-[12px] opacity-50;
 }
-.nav-text-content a:hover {
+.menu-text-content a:hover {
   @apply text-white;
 }
-.nav-line {
+.menu-line {
   @apply inline-block w-[35px] h-[.1px] bg-[#8f93a5] mr-[12px] mb-[5px];
 }
-.nav-img {
-  @apply h-full object-cover transition-all duration-1000 grayscale-[1];
+.menu-img {
+  @apply object-cover w-full transition-all duration-1000 grayscale-[1];
 }
-.nav-imgs::after {
+.menu-imgs-contanier {
+  @apply relative overflow-hidden;
+}
+.menu-imgs-contanier::after {
   @apply content-[""] absolute bg-[#2a2a30] w-full h-full z-10 transition-[1s] opacity-0 left-0 top-0;
 }
-.nav-text {
+.menu-text {
   @apply text-white opacity-0 text-[25px] text-center absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-1000;
 }
-.nav-imgs:hover.nav-imgs::after {
+.menu-imgs-contanier:hover.menu-imgs-contanier::after {
   @apply opacity-50;
 }
-.nav-imgs:hover .nav-img {
+.menu-imgs-contanier:hover .menu-img {
   @apply filter-none;
   transform: scale3d(1.1, 1.1, 1);
 }
-.nav-imgs:hover .nav-text {
+.menu-imgs-contanier:hover .menu-text {
   @apply opacity-100;
 }
 /* end commen menu */

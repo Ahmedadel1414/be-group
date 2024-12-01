@@ -1,9 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import GetInTuch from "./menuGetInTuch/GetInTuch";
+
 import MainMenu from "./mainMenu/MainMenu";
-import MenuContact from "./menuContact/MenuContact";
-import OurClients from "./menuOurClients/OurClients";
-import Servieces from "./menuServieces/Servieces";
+import MenuLeftSide from "./menuLeftSide/menuLeftSide";
+import MenuMidleSide from "./menuMidleSide/MenuMidleSide";
 
 export const chickNavWidth = createContext();
 
@@ -23,7 +22,7 @@ const Menu = () => {
 
   return (
     <>
-      <section className="relative w-full h-[100vh] z-50 overflow-hidden ">
+      <section className=" w-full h-[100vh] z-50 overflow-hidden ">
         {mobileScreen ? (
           <chickNavWidth.Provider value={mobileScreen}>
             <MainMenu />
@@ -31,11 +30,11 @@ const Menu = () => {
         ) : (
           <>
             <chickNavWidth.Provider value={mobileScreen}>
-              <Servieces />
-              <OurClients />
-              <GetInTuch />
-              <MenuContact />
-              <MainMenu />
+              <section className=" flex w-full h-full">
+                <MenuLeftSide />
+                <MenuMidleSide />
+                <MainMenu />
+              </section>
             </chickNavWidth.Provider>
           </>
         )}

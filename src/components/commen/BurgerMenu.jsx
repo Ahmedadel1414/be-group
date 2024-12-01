@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { chickIsNavvHidden } from "../../App";
+import { chickIsNavHidden } from "../../App";
 
 const BurgerMenu = ({ className }) => {
-  const setIsNavHidden = useContext(chickIsNavvHidden);
+  const setIsNavHidden = useContext(chickIsNavHidden);
 
   return (
     <>

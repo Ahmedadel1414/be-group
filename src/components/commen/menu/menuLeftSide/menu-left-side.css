@@ -1,0 +1,11 @@
+.menu-servieces {
+  @apply relative flex flex-col h-full w-full bg-[#202026] text-center text-text-color text-[15px];
+}
+
+.menu-servieces span nav a {
+  @apply mb-5;
+}
+
+.menu-servieces-title {
+  @apply absolute w-full  pt-10 pb-28 left-1/2 -translate-x-1/2;
+}

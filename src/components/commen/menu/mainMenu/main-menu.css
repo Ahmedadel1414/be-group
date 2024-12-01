@@ -1,24 +1,27 @@
+.cover-main-menu{
+  @apply relative h-full w-full flex-[4]
+}
 .main-nav {
-  @apply absolute right-0 w-[50.1%] h-full bg-[#1b1b21] text-[70px] text-white font-extrabold text-center content-center;
+  @apply  bg-[#1b1b21] h-full w-full text-[70px] text-white font-extrabold text-center content-center;
 }
-.main-nav-links {
-  @apply block transition-all duration-1000;
+.main-menu-links {
+  @apply block transition-all duration-[1000];
 }
-.main-nav-links:hover {
+.main-menu-links:hover {
   @apply text-main-color;
 }
-.nav-burger-menu{
-  @apply absolute right-10 top-10 cursor-pointer 
+.nav-burger-menu {
+  @apply absolute right-10 top-10 cursor-pointer;
 }
-.nav-burger-menu div{
-  @apply transition-all duration-500
+.nav-burger-menu div {
+  @apply transition-all duration-500;
 }
-.nav-burger-menu:hover :first-child{
-  @apply w-[25px]
+.nav-burger-menu:hover :first-child {
+  @apply w-[25px];
 }
-.nav-burger-menu:hover :last-child{
-  @apply w-[20px]
+.nav-burger-menu:hover :last-child {
+  @apply w-[20px];
 }
 .nav-burger-menu:hover div {
-  @apply bg-main-color
+  @apply bg-main-color;
 }
