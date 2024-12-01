@@ -1,5 +1,5 @@
 import MainSectionTitle from "../commen/MainSectionTitle";
-import OurServicesCard from "./our services card/OurServicesCard";
+import OurServicesCard from "./ourServicesCard/OurServicesCard";
 import Button from "../commen/Button";
 import { FaArrowRotateRight } from "react-icons/fa6";
 import "./our-services.css";

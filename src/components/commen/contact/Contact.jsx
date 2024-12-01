@@ -1,6 +1,6 @@
-import ContactForm from "./contact form/ContactForm";
-import ContactTitle from "./contact title/ContactTitle";
-import ContactInput from "./contact input/ContactInput";
+import ContactForm from "./contactForm/ContactForm";
+import ContactTitle from "./contactTitle/ContactTitle";
+import ContactInput from "./contactInput/ContactInput";
 import Button from "../Button";
 import { FaArrowRight } from "react-icons/fa";
 import "./contact.css";

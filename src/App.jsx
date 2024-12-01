@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 import Contact from "./components/commen/contact/Contact";
 import Footer from "./components/commen/footer/Footer";
 import Header from "./components/commen/header/Header";
-
 import Nav from "./components/commen/NavBarr/Nav";
 
 const chickIsNavvHidden = createContext();

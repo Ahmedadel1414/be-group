@@ -1,4 +1,3 @@
-import React from "react";
 import { FaPhoneVolume } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
 

@@ -1,5 +1,5 @@
-import PagesHero from "./commen/PagesHero/PagesHero";
-import OurWorks from "./our works/OurWorks";
+import PagesHero from "../commen/PagesHero/PagesHero";
+import OurWorks from "../ourWorks/OurWorks";
 
 const BeGroupOurWorks = () => {
   return (

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./value-title.css";
-import { valueText, valueTitle } from "../../../constants/valueTitle";
+import "./value.css";
+import { valueText, valueTitle } from "../../constants/valueTitle";
 
-const ValueTitle = () => {
+const Value = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -27,4 +27,4 @@ const ValueTitle = () => {
   );
 };
 
-export default ValueTitle;
+export default Value;
