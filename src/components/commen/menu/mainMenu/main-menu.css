@@ -1,12 +1,26 @@
-.cover-main-menu{
-  @apply relative h-full w-full flex-[4]
-}
-.main-nav {
-  @apply  bg-[#1b1b21] h-full w-full text-[70px] text-white font-extrabold text-center content-center;
+.main-menu {
+  @apply relative translate-y-full transition-all duration-1000 bg-[#1b1b21] flex-[4] h-full w-full text-[70px] text-white font-extrabold text-center content-center;
 }
 .main-menu-links {
-  @apply block transition-all duration-[1000];
+  @apply block translate-y-0 transition-all duration-1000;
 }
+/* for menu links animations */
+.main-menu-links1 {
+  @apply animate-[menu-links-animation_.6s_reverse];
+}
+.main-menu-links2 {
+  @apply animate-[menu-links-animation_.8s_reverse];
+}
+.main-menu-links3 {
+  @apply animate-[menu-links-animation_1s_reverse];
+}
+.main-menu-links4 {
+  @apply animate-[menu-links-animation_1.2s_reverse];
+}
+.main-menu-links5 {
+  @apply animate-[menu-links-animation_1.4s_reverse];
+}
+/* for menu links animations */
 .main-menu-links:hover {
   @apply text-main-color;
 }
@@ -24,4 +38,10 @@
 }
 .nav-burger-menu:hover div {
   @apply bg-main-color;
+}
+
+@keyframes menu-links-animation {
+  100% {
+    transform: translateY(100px);
+  }
 }

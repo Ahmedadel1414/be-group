@@ -1,41 +1,50 @@
-import { createContext, useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
 import MainMenu from "./mainMenu/MainMenu";
 import MenuLeftSide from "./menuLeftSide/menuLeftSide";
 import MenuMidleSide from "./menuMidleSide/MenuMidleSide";
-
-export const chickNavWidth = createContext();
+import { isNavTrue } from "../../../App";
 
 const Menu = () => {
   const [mobileScreen, setMobileScreen] = useState(window.innerWidth < 990);
+  const isNavHidden = useContext(isNavTrue);
 
   useEffect(() => {
+    // for menu hidden and block
+    const menuContainer = document.querySelector(".menu-container");
+    const displayMenu = () => {
+      isNavHidden
+        ? setTimeout(() => {
+            (menuContainer.style.display = "none"),
+              (document.body.style.overflow = "auto");
+          }, 1200)
+        : ((menuContainer.style.display = "block"),
+          (document.body.style.overflow = "hidden"));
+    };
+
+    displayMenu();
+
+    // for mbile screen
     const handleMobileScreen = () => {
       setMobileScreen(window.innerWidth < 990);
     };
     window.addEventListener("resize", handleMobileScreen);
-
     return () => {
       window.removeEventListener("resize", handleMobileScreen);
     };
-  }, []);
+  }, [isNavHidden]);
 
   return (
     <>
-      <section className=" w-full h-[100vh] z-50 overflow-hidden ">
+      <section className="menu-container hidden bg-transparent w-full h-[100vh] z-10 overflow-hidden ">
         {mobileScreen ? (
-          <chickNavWidth.Provider value={mobileScreen}>
-            <MainMenu />
-          </chickNavWidth.Provider>
+          <MainMenu />
         ) : (
           <>
-            <chickNavWidth.Provider value={mobileScreen}>
-              <section className=" flex w-full h-full">
-                <MenuLeftSide />
-                <MenuMidleSide />
-                <MainMenu />
-              </section>
-            </chickNavWidth.Provider>
+            <section className=" flex w-full h-full">
+              <MenuLeftSide />
+              <MenuMidleSide />
+              <MainMenu />
+            </section>
           </>
         )}
       </section>

@@ -1,11 +1,13 @@
-import PagesHero from "../components/commen/PagesHero/PagesHero";
+import OtherPagesHero from "./otherPagesHero/OtherPagesHero";
 import OurWorks from "../components/ourWorks/OurWorks";
+import AnimationOnScroll from "../components/commen/AnimationOnScroll";
 
 const BeGroupOurWorks = () => {
   return (
     <>
-      <PagesHero />
+      <OtherPagesHero />
       <OurWorks />
+      <AnimationOnScroll />
     </>
   );
 };

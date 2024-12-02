@@ -1,6 +1,6 @@
-import "./pages-hero.css";
+import "./other-pages-hero.css";
 
-const PagesHero = () => {
+const OtherPagesHero = () => {
   return (
     <>
       <section className="pages-hero-img">
@@ -16,4 +16,4 @@ const PagesHero = () => {
   );
 };
 
-export default PagesHero;
+export default OtherPagesHero;

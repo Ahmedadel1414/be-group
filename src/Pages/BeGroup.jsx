@@ -12,7 +12,6 @@ const BeGroup = () => {
   return (
     <>
       <>
-        <AnimationOnScroll />
         <Hero />
         <LeftSideBarr />
         <AboutUs />
@@ -21,6 +20,7 @@ const BeGroup = () => {
         <OurServices />
         <Achievements />
         <OurWorks />
+        <AnimationOnScroll />
       </>
     </>
   );

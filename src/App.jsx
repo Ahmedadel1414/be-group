@@ -6,25 +6,22 @@ import NavBarr from "./components/commen/navBarr/NavBarr";
 import Menu from "./components/commen/menu/Menu";
 
 export const chickIsNavHidden = createContext();
-export const isNavHidden = createContext();
+export const isNavTrue = createContext();
 
 function App() {
   const [isNavHidden, setIsNavHidden] = useState(true);
 
   return (
     <chickIsNavHidden.Provider value={setIsNavHidden}>
-      {isNavHidden ? (
+      <isNavTrue.Provider value={isNavHidden}>
         <>
+          <Menu />
           <NavBarr />
           <Outlet />
           <Contact />
           <Footer />
         </>
-      ) : (
-        <>
-          <Menu />
-        </>
-      )}
+      </isNavTrue.Provider>
     </chickIsNavHidden.Provider>
   );
 }

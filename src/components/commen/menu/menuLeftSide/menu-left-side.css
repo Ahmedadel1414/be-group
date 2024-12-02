@@ -1,11 +1,15 @@
-.menu-servieces {
-  @apply relative flex flex-col h-full w-full bg-[#202026] text-center text-text-color text-[15px];
+.menu-lef-side-container {
+  @apply flex flex-col h-full w-full text-center text-text-color text-[15px];
 }
-
-.menu-servieces span nav a {
+.menu-services {
+  @apply relative -translate-y-full transition-all duration-1000 bg-[#202026] w-full;
+}
+.menu-left-side-img {
+  @apply relative -z-[1] translate-x-full transition-all duration-1000;
+}
+.menu-lef-side-container span nav a {
   @apply mb-5;
 }
-
 .menu-servieces-title {
-  @apply absolute w-full  pt-10 pb-28 left-1/2 -translate-x-1/2;
+  @apply absolute w-full top-0 pt-10 pb-28 left-1/2 -translate-x-1/2;
 }
