@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import MainMenu from "./mainMenu/MainMenu";
-import MenuLeftSide from "./menuLeftSide/menuLeftSide";
+import MenuLeftSide from "./menuLeftSide/MenuLeftSid";
 import MenuMidleSide from "./menuMidleSide/MenuMidleSide";
 import { isNavTrue } from "../../../App";
 

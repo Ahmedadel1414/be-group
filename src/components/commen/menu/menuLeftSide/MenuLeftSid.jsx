@@ -1,7 +1,7 @@
-import ourClients from "/menu/OurClients.jpg";
-import "./menu-left-side.css";
 import { useContext, useEffect } from "react";
+import ourClients from "/menu/OurClients.jpg";
 import { isNavTrue } from "../../../../App";
+import "./menu-left-side.css";
 
 const MenuLeftSide = () => {
   const isNavHidden = useContext(isNavTrue);
