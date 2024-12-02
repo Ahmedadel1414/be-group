@@ -12,11 +12,10 @@ const Menu = () => {
     // for menu hidden and block
     const menuContainer = document.querySelector(".menu-container");
     const displayMenu = () => {
+      menuContainer.style.display = "none";
       isNavHidden
-        ? setTimeout(() => {
-            (menuContainer.style.display = "none"),
-              (document.body.style.overflow = "auto");
-          }, 1200)
+        ? ((menuContainer.style.display = "none"),
+          (document.body.style.overflow = "auto"))
         : ((menuContainer.style.display = "block"),
           (document.body.style.overflow = "hidden"));
     };
@@ -35,7 +34,7 @@ const Menu = () => {
 
   return (
     <>
-      <section className="menu-container hidden bg-transparent w-full h-[100vh] z-10 overflow-hidden ">
+      <section className="menu-container bg-transparent w-full h-[100vh] z-10 overflow-hidden ">
         {mobileScreen ? (
           <MainMenu />
         ) : (
