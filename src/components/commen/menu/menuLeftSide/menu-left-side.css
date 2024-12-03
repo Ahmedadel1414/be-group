@@ -5,7 +5,7 @@
   @apply relative -translate-y-full transition-all duration-1000 bg-[#202026] w-full;
 }
 .menu-left-side-img {
-  @apply relative -z-[1] translate-x-full transition-all duration-1000;
+  @apply relative z-[1] translate-x-full transition-all duration-1000;
 }
 .menu-lef-side-container span nav a {
   @apply mb-5;

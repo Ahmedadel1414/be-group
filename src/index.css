@@ -112,11 +112,6 @@ body {
   @apply absolute content-[""] -z-30 bottom-[5px] left-0 bg-main-color h-5 w-full;
 }
 /* end main section title */
-
 .scroll-text {
   @apply transition-all duration-[400ms];
 }
-
-/* navbarr animate */
-
-/* navbarr animate */

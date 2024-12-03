@@ -27,7 +27,7 @@ const MenuMidleSide = () => {
     <>
       <section className="flex-[3]">
         <div className=" flex flex-col h-full">
-          <div className="menu-imgs-contanier menu-mid-img translate-y-full transition-all duration-1000 -z-[1] h-[55%]">
+          <div className="menu-imgs-contanier menu-mid-img translate-y-full transition-all duration-1000 z-[1] h-[55%]">
             <a href="#">
               <img
                 src={getInTuch}
@@ -37,7 +37,7 @@ const MenuMidleSide = () => {
             </a>
             <h1 className="menu-text">Get in Touch</h1>
           </div>
-          <div className=" bg-[#202026] h-[45%] text-center content-center">
+          <div className=" relative z-10 bg-[#202026] h-[45%] text-center content-center">
             <div className=" menu-text-content text-[3px] text-text-color">
               <a href="#" className="block main-menu-links1 ">
                 <i>

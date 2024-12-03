@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import MainSectionTitle from "../commen/MainSectionTitle";
-import { FaAngleLeft } from "react-icons/fa";
-import { FaAngleRight } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./our-clients.css";
 import {
   client1,
@@ -18,56 +20,77 @@ import {
 } from "../../../public/ourClients";
 
 const OurClients = () => {
+  const [images, setImges] = useState([]);
+
+  useEffect(() => {
+    setImges([
+      client1,
+      client2,
+      client3,
+      client4,
+      client5,
+      client6,
+      client7,
+      client8,
+      client9,
+      client10,
+      client11,
+      client12,
+    ]);
+  }, []);
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 300,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+
   return (
     <>
-      <section className="our-clients-container ">
-        <MainSectionTitle mainTitle="Our" mainTitle2="Clients" />
-        <div className="our-clients container">
-          <div className="btn ">
-            <button>{<FaAngleLeft />}</button>
-          </div>
-          <div className="our-clients-contet">
-            <a href="#">
-              <img src={client1} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client2} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client3} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client4} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client5} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client6} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client7} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client8} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client9} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client10} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client11} alt="icons" />
-            </a>
-            <a href="#">
-              <img src={client12} alt="icons" />
-            </a>
-          </div>
-          <div className="btn">
-            <button>{<FaAngleRight />}</button>
-          </div>
+      <section className="container">
+        <div className="pb-32">
+          <MainSectionTitle mainTitle="Our" mainTitle2="Clients" />
         </div>
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Client ${index + 1}`}
+                className="our-clients-img"
+              />
+            </div>
+          ))}
+        </Slider>
       </section>
     </>
   );

@@ -5,7 +5,7 @@ const OurServicesCard = ({ cardTitle, textParagraphTitle, textParagraph }) => {
     <>
       <div className="oue-services-card">
         <h1>{cardTitle}</h1>
-        <p className="nav-text-content">
+        <p className="menu-text-content">
           <span className=" text-main-color">{textParagraphTitle}</span>
           {textParagraph}
         </p>

@@ -7,11 +7,9 @@
 .bottom-input-container::before {
   @apply absolute content-[""] right-3 top-1/2 bg-transparent border border-white rounded-full border-solid w-[20px] h-[20px] -translate-y-1/2;
 }
-
 .bottom-input-container:hover {
   @apply bg-main-color;
 }
-
 .bottom-input-container:hover.bottom-input-container::before {
   @apply bg-white;
 }

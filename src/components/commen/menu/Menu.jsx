@@ -12,7 +12,6 @@ const Menu = () => {
     // for menu hidden and block
     const menuContainer = document.querySelector(".menu-container");
     const displayMenu = () => {
-      menuContainer.style.display = "none";
       isNavHidden
         ? ((menuContainer.style.display = "none"),
           (document.body.style.overflow = "auto"))
