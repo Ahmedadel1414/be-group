@@ -1,0 +1,121 @@
+{
+  "beGroupMainHearoTitle": "WE PROVIDE DIGITAL MARKETING",
+  "contactUs": "Contact Us",
+  "beGroup": "Be Group",
+  "aboutUsTitle": "Digital Services has never been easier.",
+  "aboutUsWhatWeDo": "What We Do?",
+  "aboutUsPNum1": "- Digital assets audit",
+  "aboutUsPNum2": "- Research & competitive analysis",
+  "aboutUsPNum3": "- Target audience segmentation",
+  "aboutUsPNum4": "- Customer persona & content personalization strategy",
+  "aboutUsPNum5": "- Digital communications strategy",
+  "aboutUsPNum6": "- Creative, social media & Digital advertising strategy",
+  "aboutUsPNum7": "- Business intelligence & reporting tools",
+  "ourClients-Our": "Our",
+  "ourClients-Clients": "Clients",
+  "ourServices-Our": "Our",
+  "ourServices-Services": "Services",
+  "ourServicesCard-Button": "More Details",
+  "ourServicesCard-Button2": "Services",
+
+  "ourServicesCard1-Title": "Animation video",
+  "ourServicesCard1-textParagraphTitle": "Embark on a journey",
+  "ourServicesCard1-textParagraph": "of creativity and excellence with Be Group's Animation Video service. We're here to make your ideas come to life in a mesmer",
+
+  "ourServicesCard2-Title": "Social Media Management",
+  "ourServicesCard2-textParagraphTitle": "Be Group ",
+  "ourServicesCard2-textParagraph": "offers social media advertising services for companies...",
+
+  "ourServicesCard3-Title": "Web Development",
+  "ourServicesCard3-textParagraphTitle": "Be Group ",
+  "ourServicesCard3-textParagraph": "was founded in 2009 in Egypt, and is techonology company...",
+
+  "ourServicesCard4-Title": "Google Adword",
+  "ourServicesCard4-textParagraphTitle": "Be Group ",
+  "ourServicesCard4-textParagraph": "is a 2023 Premier partner...",
+
+  "ourServicesCard5-Title": "Search Engine Optization",
+  "ourServicesCard5-textParagraphTitle": "SEO ",
+  "ourServicesCard5-textParagraph": "(Search Engine Optimization) is the preactice of... ",
+
+  "ourServicesCard6-Title": "Google Maps",
+  "ourServicesCard6-textParagraphTitle": "Engage with customers On Google ",
+  "ourServicesCard6-textParagraph": "With Be Group Team and Google My Business Account, your get mor...",
+
+  "ourServicesCard7-Title": "Media Production",
+  "ourServicesCard7-textParagraphTitle": "Be Group ",
+  "ourServicesCard7-textParagraph": "provides media production services, which include video production, audio production...",
+
+  "ourServicesCard8-Title": "Branding",
+  "ourServicesCard8-textParagraphTitle": "Be Group ",
+  "ourServicesCard8-textParagraph": "provides brand design services that aim...",
+
+  "ourServicesCard9-Title": "Consultation",
+  "ourServicesCard9-textParagraphTitle": "Be Group ",
+  "ourServicesCard9-textParagraph": "provides marketing consulting services for companies...",
+
+  "achievements-Achievement" :"Achievement",
+  "achievements-OfCompany" :"Of Company",
+
+  "achievements-Successful" :"home.successful_project",
+  "achievements-OfCustomer" :"home.Customer_rate",
+  "achievements-Employ" :"home.employ",
+  "achievements-Work" :"home.work_in",
+
+  "ourWorks-OurWorks": "Our Works",
+  "ourWorks-SomeOf": "some of",
+  "ourWorks-Button": "More",
+
+  "contactTitle": "Get in Touch",
+  "contactTitle-Title": "To custom made",
+  "contactTitle-Paragraph": "Please fill in the quick form and we will be in touch with you as soon as possible",
+
+  "contactForm-Name": "  Name", 
+  "contactForm-Phone": "  Phone", 
+  "contactForm-Emali": "  Email", 
+  "contactForm-Massage": "  Massage", 
+
+  "contactInput-AnimationVideo": "Animation video", 
+  "contactInput-SocialMediaManagement": "Social Media Management",
+  "contactInput-WebDevelopment": "Web Development",
+  
+  "contactInput-GoogleAdword": "Google Adword",
+  "contactInput-SearchEngineOptimization": "Search Engine Optimization",
+  "contactInput-GoogleMaps": "Google Maps",
+
+  "contactInput-MediaProduction": "MediaProduction",
+  "contactInput-Branding": "Branding",
+  "contactInput-Consultation": "Consultation",
+
+  "contact-Button": "Send",
+
+  "footer-Address":"Address",
+  "footer-AddressContent":"25 Asmaa Fahmy, Ard El Golf, Heliopolis, Cairo, Egypt",
+  "footer-Email":"Email Address",
+  "footer-EmailContent":"ahmedadel10888@gmail.com",
+  "footer-Phone":"Phone",
+  "footer-PhoneContent":"+201001574551",
+
+  "mainMenu-Home": "Home",
+  "mainMenu-AboutUs": "About Us",
+  "mainMenu-Services": "Services",
+  "mainMenu-Portfolio": "Portfolio",
+  "mainMenu-ContactUs": "Contact Us",
+
+  "midleMenu-GetInTouch": "Get In Touch",
+
+  "leftSideMenu-OurServieces": "Our Servieces",
+
+  "leftSideMenu-WepDevelopment": "Wep Development",
+  "leftSideMenu-MobileApp": "Mobile App",
+  "leftSideMenu-Branding": "Branding",
+  "leftSideMenu-SocialMediaManagement": "Social Media Management",
+  "leftSideMenu-GoogleADword": "Google Adword",
+  "leftSideMenu-MoediaProduction": "Moedia Production",
+
+  "leftSideMenu-OurClients": "Our Clients",
+
+  "otherHero-BeGroup": "Be Group",
+  "otherHero-Paragraph": "For e-marketing solutions",
+  "otherHero-Paragraph2": "Works"
+}

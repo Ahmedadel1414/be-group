@@ -4,8 +4,11 @@ import ContactInput from "./contactInput/ContactInput";
 import Button from "../Button";
 import { FaArrowRight } from "react-icons/fa";
 import "./contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="contact-container ">
@@ -15,19 +18,19 @@ const Contact = () => {
             <ContactForm />
           </div>
           <div className="contact-input-container">
-            <ContactInput text="Animation video" />
-            <ContactInput text="Social Media Management" />
-            <ContactInput text="Web Development" />
-            <ContactInput text="Google Adword" />
-            <ContactInput text="Search Engine Optimization" />
-            <ContactInput text="Google Maps" />
-            <ContactInput text="Media Production" />
-            <ContactInput text="Branding" />
-            <ContactInput text="Consultation" />
+            <ContactInput text={t("contactInput-AnimationVideo")} />
+            <ContactInput text={t("contactInput-SocialMediaManagement")} />
+            <ContactInput text={t("contactInput-WebDevelopment")} />
+            <ContactInput text={t("contactInput-GoogleAdword")} />
+            <ContactInput text={t("contactInput-SearchEngineOptimization")} />
+            <ContactInput text={t("contactInput-GoogleMaps")} />
+            <ContactInput text={t("contactInput-MediaProduction")} />
+            <ContactInput text={t("contactInput-Branding")} />
+            <ContactInput text={t("contactInput-Consultation")} />
           </div>
           <div className="contact-button-container">
             <Button
-              text="Send"
+              text={t("contact-Button")}
               padding="10px"
               icon={
                 <FaArrowRight

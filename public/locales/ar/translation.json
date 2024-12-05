@@ -1,0 +1,121 @@
+{
+  "beGroupMainHearoTitle": "نحن نقدم التسويق الرقمي",
+  "contactUs": "تواصل معنا",
+  "beGroup": "بي جروب",
+  "aboutUsTitle": "حيث ان الخدمات الرقمية أسهل من أي وقت مضى.",
+  "aboutUsWhatWeDo": "الذي نفعله؟",
+  "aboutUsPNum1": "- تدقيق الأصول الرقمية",
+  "aboutUsPNum2": "- البحث والتحليل التنافسي",
+  "aboutUsPNum3": "- تقسيم الجمهور المستهدف",
+  "aboutUsPNum4": "- شخصية العميل واستراتيجية تخصيص المحتوى",
+  "aboutUsPNum5": "- استراتيجية الاتصالات الرقمية",
+  "aboutUsPNum6": "- إستراتيجية إبداعية ، على مواقع التواصل الإجتماعي ، وإعلانات رقمية",
+  "aboutUsPNum7": "- ذكاء الأعمال وأدوات إعداد التقارير",
+  "ourClients-Our": "عملا",
+  "ourClients-Clients": "ئنا",
+  "ourServices-Our": "خدما",
+  "ourServices-Services": "تنا",
+  "ourServicesCard-Button": "تفاصيل اكثر",
+  "ourServicesCard-Button2": "الخدمات",
+
+  "ourServicesCard1-Title": "فيديو انيميشن",
+  "ourServicesCard1-textParagraphTitle": "انطلق الي عالم ",
+  "ourServicesCard1-textParagraph": "الإبداع والتميز مع خدمة إنشاء مقاطع فيديو متحركة (Animation video) من شركة بي جروب، نحن هنا لنجعل أفكارك تتحرك وتتجسّد بأسلوب ساح...",
+
+  "ourServicesCard2-Title": "خدمات التواصل الاجتماعي",
+  "ourServicesCard2-textParagraphTitle": "بي جروب ",
+  "ourServicesCard2-textParagraph": "تقدم خدمات الاعلان علي وسائل التواصل الاجتماعي للشركات و المؤسسات...",
+
+  "ourServicesCard3-Title": "تصميم و تطوير المواقع",
+  "ourServicesCard3-textParagraphTitle": "تأسست شركة بي جروب ",
+  "ourServicesCard3-textParagraph": "في العام 2009 في مصر و هي شركة تقنيه تركز علي...",
+
+  "ourServicesCard4-Title": "حملات جوجل",
+  "ourServicesCard4-textParagraphTitle": "تعتبر شركة بي جروب ",
+  "ourServicesCard4-textParagraph": " شريكًا رئيسيًا لعام 2023...",
+
+  "ourServicesCard5-Title": "تحسين محركات البحث",
+  "ourServicesCard5-textParagraphTitle": " (التحسين لمحركات البحث) ",
+  "ourServicesCard5-textParagraph": " هي ممارسة تحسين الظهور وتصنيف موقع الويب على صفحات نتائج محركات البحث . في بي جروب، نقدم خدمات شاملة لـ SEO تهدف إ... ",
+
+  "ourServicesCard6-Title": "جوجل ماب",
+  "ourServicesCard6-textParagraphTitle": "تفاعل مع العملاء علي جوجل ",
+  "ourServicesCard6-textParagraph": "مع فريق بي جروب و حساب جوجل,تحصل علي أكتر من مجرد ٌقائمة...",
+
+  "ourServicesCard7-Title": "الانتاج الاعلامي",
+  "ourServicesCard7-textParagraphTitle": "تقدم بي جروب ",
+  "ourServicesCard7-textParagraph": "خدمات الانتاج الاعلامي التي تشمل انتاج الفيديو و الصوت و المحتوي الرقمي. و تهدف هذه الخدمات الي...",
+
+  "ourServicesCard8-Title": "العلامه التجاريه",
+  "ourServicesCard8-textParagraphTitle": "تقدم بي جروب  ",
+  "ourServicesCard8-textParagraph": "خدمات تصميم العلامات التجاره التي تقدف الي تحسين و تعزيز...",
+
+  "ourServicesCard9-Title": "استشارات",
+  "ourServicesCard9-textParagraphTitle": "تقدم بي جروب ",
+  "ourServicesCard9-textParagraph": "خدمات الاستشارات التسويقيه للشركات و المؤسسات بحدف تحقيق...",
+
+  "achievements-Achievement" :"انجازات ",
+  "achievements-OfCompany" :"الشركه",
+
+  "achievements-Successful" :"مشاريع ناجحة",
+  "achievements-OfCustomer" :"نسبة رضاء العملاء",
+  "achievements-Employ" :"عدد الموظفون",
+  "achievements-Work" :"نعمل في 3 دول عربية",
+
+  "ourWorks-OurWorks": "اعمالنا ",
+  "ourWorks-SomeOf": "بعض من ",
+  "ourWorks-Button": "المزيد",
+
+  "contactTitle": "اتصل بنا",
+  "contactTitle-Title": "اذا كنت ترغب في الحديث مع استشاري ؟",
+  "contactTitle-Paragraph": "يسعدنا ان نقوم بالرد على جميع استفساراتكم ، قم بتسجيل الاستمارة التالية وسيقوم احد استشارينا بالتواصل معكم في أقرب وقت",
+
+  "contactForm-Name": "الاسم", 
+  "contactForm-Phone": "رقم الهاتف  ", 
+  "contactForm-Emali": "الايميل  ", 
+  "contactForm-Massage": "اترك رساله  ", 
+
+  "contactInput-AnimationVideo": "فيديو انميشن", 
+  "contactInput-SocialMediaManagement": "خدمات التواصل الاجتماعي",
+  "contactInput-WebDevelopment": "تصميم و تطوير المواقع",
+  
+  "contactInput-GoogleAdword": "حملات جوجل",
+  "contactInput-SearchEngineOptimization": "تحسين محركات البحث",
+  "contactInput-GoogleMaps": "جوجل ماب",
+
+  "contactInput-MediaProduction": "الانتاج الاعلامي",
+  "contactInput-Branding": "العلامات التجاريه",
+  "contactInput-Consultation": "استشارات",
+
+  "contact-Button": "ارسال",
+
+  "footer-Address":"العنوان",
+  "footer-AddressContent":"مصر",
+  "footer-Email":"البريد الالكتروني",
+  "footer-EmailContent":"ahmedadel10888@gmail.com",
+  "footer-Phone":"رقم الهاتف",
+  "footer-PhoneContent":"+201001574551",
+
+  "mainMenu-Home": "الرئيسيه",
+  "mainMenu-AboutUs": "من نحن",
+  "mainMenu-Services": "الخدمات",
+  "mainMenu-Portfolio": "سابة الاعمال",
+  "mainMenu-ContactUs": "تواصل معنا",
+
+  "midleMenu-GetInTouch": "اتصل بنا",
+
+  "leftSideMenu-OurServieces": "خدماتنا",
+
+  "leftSideMenu-WepDevelopment": "تصميم و تطوير المواقع",
+  "leftSideMenu-MobileApp": "تصميم و تطوير الموبايل",
+  "leftSideMenu-Branding": "العلامات التجاريه",
+  "leftSideMenu-SocialMediaManagement": "خدمات التواصل الاجتماعي",
+  "leftSideMenu-GoogleADword": "حملات جزجل",
+  "leftSideMenu-MoediaProduction": "الانتاج الاعلامي",
+
+  "leftSideMenu-OurClients": "عملائنا",
+
+  "otherHero-BeGroup": "بي جروب",
+  "otherHero-Paragraph": "لحلول التسويق ",
+  "otherHero-Paragraph2": "الالكتروني"
+}

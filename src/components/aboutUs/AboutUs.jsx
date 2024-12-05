@@ -1,8 +1,11 @@
 import aboutUsImg from "/about us/34921.webp";
 import Stroke from "../commen/StrokeText";
 import "./about-us.css";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="about-us-container">
@@ -10,16 +13,16 @@ const AboutUs = () => {
           <img src={aboutUsImg} alt="img" />
         </div>
         <div className="about-text-contaner">
-          <Stroke text="Be Group" />
-          <h1>Digital Services has never been easier.</h1>
-          <h3>What We Do?</h3>
-          <h6>- Digital assets audit</h6>
-          <h6>- Research & competitive analysis</h6>
-          <h6>- Target audience segmentation</h6>
-          <h6>- Customer persona & content personalization strategy</h6>
-          <h6>- Digital communications strategy</h6>
-          <h6>- Creative, social media & Digital advertising strategy</h6>
-          <h6>- Business intelligence & reporting tools</h6>
+          <Stroke text={t("beGroup")} />
+          <h1>{t("aboutUsTitle")}</h1>
+          <h3>{t("aboutUsWhatWeDo")}</h3>
+          <h6>{t("aboutUsPNum1")}</h6>
+          <h6>{t("aboutUsPNum2")}</h6>
+          <h6>{t("aboutUsPNum3")}</h6>
+          <h6>{t("aboutUsPNum4")}</h6>
+          <h6>{t("aboutUsPNum5")}</h6>
+          <h6>{t("aboutUsPNum6")}</h6>
+          <h6>{t("aboutUsPNum7")}</h6>
         </div>
       </section>
     </>

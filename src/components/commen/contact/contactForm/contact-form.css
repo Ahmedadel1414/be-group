@@ -10,7 +10,7 @@ textarea {
 }
 .input-name,
 .input-phone {
-  @apply inline-block mb-[25px] w-[calc(50%-13px)] bg-[#2d2d2e] transition-all duration-1000 bg-opacity-50;
+  @apply inline-block mx-[6.5px] mb-[25px] w-[calc(50%-13px)] bg-[#2d2d2e] transition-all duration-1000 bg-opacity-50;
 }
 
 textarea {

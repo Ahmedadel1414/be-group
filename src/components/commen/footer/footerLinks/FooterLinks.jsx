@@ -2,12 +2,14 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 import { FaMapMarker } from "react-icons/fa";
 import "./footer-links.css";
+import { useTranslation } from "react-i18next";
 const FooterLinks = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="footer-contact container">
         <div className="footer-links">
-          <h1>Phone</h1>
+          <h1>{t("footer-Phone")}</h1>
           <a href="#">
             <FaPhoneAlt
               style={{
@@ -16,11 +18,11 @@ const FooterLinks = () => {
                 paddingRight: "5px",
               }}
             />
-            +201001574551
+            {t("footer-PhoneContent")}
           </a>
         </div>
         <div className="footer-links">
-          <h1>Email Address</h1>
+          <h1>{t("footer-Email")}</h1>
           <a href="#">
             <FaMailBulk
               style={{
@@ -29,11 +31,11 @@ const FooterLinks = () => {
                 paddingRight: "5px",
               }}
             />
-            ahmedadel10888@gmail.com
+            {t("footer-EmailContent")}
           </a>
         </div>
         <div className="footer-links">
-          <h1>Address</h1>
+          <h1>{t("footer-Address")}</h1>
           <a href="#">
             <FaMapMarker
               style={{
@@ -42,7 +44,7 @@ const FooterLinks = () => {
                 paddingRight: "5px",
               }}
             />
-            25 Asmaa Fahmy, Ard El Golf, Heliopolis, Cairo, Egypt
+            {t("footer-AddressContent")}
           </a>
         </div>
       </div>

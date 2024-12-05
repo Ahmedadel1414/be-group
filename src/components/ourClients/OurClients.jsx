@@ -18,8 +18,10 @@ import {
   client11,
   client12,
 } from "../../../public/ourClients";
+import { useTranslation } from "react-i18next";
 
 const OurClients = () => {
+  const { t } = useTranslation();
   const [images, setImges] = useState([]);
 
   useEffect(() => {
@@ -78,7 +80,10 @@ const OurClients = () => {
     <>
       <section className="container">
         <div className="pb-32">
-          <MainSectionTitle mainTitle="Our" mainTitle2="Clients" />
+          <MainSectionTitle
+            mainTitle={t("ourClients-Our")}
+            mainTitle2={t("ourClients-Clients")}
+          />
         </div>
         <Slider {...settings}>
           {images.map((image, index) => (

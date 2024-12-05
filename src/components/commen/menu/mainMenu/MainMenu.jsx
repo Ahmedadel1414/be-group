@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import "./main-menu.css";
 import BurgerMenu from "../../BurgerMenu";
 import { chickIsNavHidden, isNavTrue } from "../../../../App";
+import { useTranslation } from "react-i18next";
 
 const MainMenu = () => {
+  const { t } = useTranslation();
+
   const setIsNavHidden = useContext(chickIsNavHidden);
   const isNavHidden = useContext(isNavTrue);
 
@@ -36,7 +39,7 @@ const MainMenu = () => {
               setIsNavHidden(true);
             }}
           >
-            Home
+            {t("mainMenu-Home")}
           </Link>
           <Link
             to="/about-us"
@@ -45,7 +48,7 @@ const MainMenu = () => {
               setIsNavHidden(true);
             }}
           >
-            About Us
+            {t("mainMenu-AboutUs")}
           </Link>
           <Link
             to="/our-services"
@@ -54,7 +57,7 @@ const MainMenu = () => {
               setIsNavHidden(true);
             }}
           >
-            Services
+            {t("mainMenu-Services")}
           </Link>
           <Link
             to="our-works"
@@ -63,7 +66,7 @@ const MainMenu = () => {
               setIsNavHidden(true);
             }}
           >
-            Portfolio
+            {t("mainMenu-Portfolio")}
           </Link>
           <Link
             to="/our-contacts"
@@ -72,7 +75,7 @@ const MainMenu = () => {
               setIsNavHidden(true);
             }}
           >
-            Contact Us
+            {t("mainMenu-ContactUs")}
           </Link>
         </nav>
         <div className="absolute -right-[60px] bottom-[150px] -rotate-90">

@@ -4,62 +4,67 @@ import Button from "../commen/Button";
 import { FaArrowRotateRight } from "react-icons/fa6";
 import "./our-services.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const OurServices = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="pt-32">
-        <MainSectionTitle mainTitle="Our" mainTitle2="Services" />
+        <MainSectionTitle
+          mainTitle={t("ourServices-Our")}
+          mainTitle2={t("ourServices-Services")}
+        />
         <div className="our-services-container container">
           <OurServicesCard
-            cardTitle="Animation video"
-            textParagraphTitle="Embark on a journey "
-            textParagraph="of creativity and excellence with Be Group's Animation Video service. We're here to make your ideas come to life in a mesmer"
+            cardTitle={t("ourServicesCard1-Title")}
+            textParagraphTitle={t("ourServicesCard1-textParagraphTitle")}
+            textParagraph={t("ourServicesCard1-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Social Media Management"
-            textParagraphTitle="Be Group "
-            textParagraph="offers social media advertising services for companies..."
+            cardTitle={t("ourServicesCard2-Title")}
+            textParagraphTitle={t("ourServicesCard2-textParagraphTitle")}
+            textParagraph={t("ourServicesCard2-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Web Development"
-            textParagraphTitle="Be Group "
-            textParagraph="was founded in 2009 in Egypt, and is techonology company..."
+            cardTitle={t("ourServicesCard3-Title")}
+            textParagraphTitle={t("ourServicesCard3-textParagraphTitle")}
+            textParagraph={t("ourServicesCard3-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Google Adword"
-            textParagraphTitle="Be Group "
-            textParagraph="is a 2023 Premier partner..."
+            cardTitle={t("ourServicesCard4-Title")}
+            textParagraphTitle={t("ourServicesCard4-textParagraphTitle")}
+            textParagraph={t("ourServicesCard4-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Search Engine Optization"
-            textParagraphTitle="SEO "
-            textParagraph="(Search Engine Optimization) is the preactice of... "
+            cardTitle={t("ourServicesCard5-Title")}
+            textParagraphTitle={t("ourServicesCard5-textParagraphTitle")}
+            textParagraph={t("ourServicesCard5-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Google Maps"
-            textParagraphTitle="Engage with customers On Google "
-            textParagraph="With Be Group Team and Google My Business Account, your get mor..."
+            cardTitle={t("ourServicesCard6-Title")}
+            textParagraphTitle={t("ourServicesCard6-textParagraphTitle")}
+            textParagraph={t("ourServicesCard6-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Media Production"
-            textParagraphTitle="Be Group "
-            textParagraph="provides media production services, which include video production, audio production..."
+            cardTitle={t("ourServicesCard7-Title")}
+            textParagraphTitle={t("ourServicesCard7-textParagraphTitle")}
+            textParagraph={t("ourServicesCard7-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Branding"
-            textParagraphTitle="Be Group "
-            textParagraph="provides brand design services that aim..."
+            cardTitle={t("ourServicesCard8-Title")}
+            textParagraphTitle={t("ourServicesCard8-textParagraphTitle")}
+            textParagraph={t("ourServicesCard8-textParagraph")}
           />
           <OurServicesCard
-            cardTitle="Consultation"
-            textParagraphTitle="Be Group "
-            textParagraph="provides marketing consulting services for companies..."
+            cardTitle={t("ourServicesCard9-Title")}
+            textParagraphTitle={t("ourServicesCard9-textParagraphTitle")}
+            textParagraph={t("ourServicesCard9-textParagraph")}
           />
         </div>
         <div className="our-services-button">
           <Link to="/our-services">
             <Button
-              text="Services"
+              text={t("ourServicesCard-Button2")}
               padding="10px 30px"
               icon={
                 <FaArrowRotateRight

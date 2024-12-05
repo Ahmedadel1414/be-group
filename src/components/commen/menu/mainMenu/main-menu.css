@@ -4,7 +4,7 @@
 .main-menu-links {
   @apply block translate-y-0 transition-all duration-1000;
 }
-/* for menu links animations */
+
 .main-menu-links1 {
   @apply animate-[menu-links-animation_.6s_reverse];
 }
@@ -20,10 +20,10 @@
 .main-menu-links5 {
   @apply animate-[menu-links-animation_1.4s_reverse];
 }
-/* for menu links animations */
 .main-menu-links:hover {
   @apply text-main-color;
 }
+
 .nav-burger-menu {
   @apply absolute right-10 top-10 cursor-pointer;
 }

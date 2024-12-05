@@ -14,13 +14,18 @@ import {
   ourWorksImg9,
 } from "./ourWorksImges";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const OurWorks = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="our-works-container">
         <div className="our-works-title">
-          <MainSectionTitle mainTitle="Some os" mainTitle2="Our Works" />
+          <MainSectionTitle
+            mainTitle={t("ourWorks-SomeOf")}
+            mainTitle2={t("ourWorks-OurWorks")}
+          />
         </div>
         <div className="our-works-img-container container">
           <div className="our-work-img">
@@ -72,7 +77,7 @@ const OurWorks = () => {
         <div className="our-services-button">
           <Link to="/our-works">
             <Button
-              text="Our Works"
+              text={t("ourWorks-Button")}
               padding="10px 30px"
               icon={
                 <FaArrowRotateRight

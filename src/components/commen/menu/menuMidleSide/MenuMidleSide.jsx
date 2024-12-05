@@ -7,8 +7,11 @@ import { FaInstagram } from "react-icons/fa";
 import getInTuch from "/menu/getInTuch.webp";
 import { useContext, useEffect } from "react";
 import { isNavTrue } from "../../../../App";
+import { useTranslation } from "react-i18next";
 
 const MenuMidleSide = () => {
+  const { t } = useTranslation();
+
   const isNavHidden = useContext(isNavTrue);
 
   useEffect(() => {
@@ -35,7 +38,7 @@ const MenuMidleSide = () => {
                 className="menu-img h-full"
               />
             </a>
-            <h1 className="menu-text">Get in Touch</h1>
+            <h1 className="menu-text">{t("midleMenu-GetInTouch")}</h1>
           </div>
           <div className=" relative z-10 bg-[#202026] h-[45%] text-center content-center">
             <div className=" menu-text-content text-[3px] text-text-color">

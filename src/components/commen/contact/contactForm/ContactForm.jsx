@@ -1,24 +1,27 @@
+import { useTranslation } from "react-i18next";
 import "./contact-form.css";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="input-container">
         <form action="submet" className="input-containt">
-          <span className="input-name mr-[25px]">
+          <span className="input-name ">
             <input
               type="text"
               name="userName"
               id="inputUserName"
-              placeholder="  Name"
+              placeholder={t("contactForm-Name")}
             />
           </span>
-          <span className="input-phone">
+          <span className="input-phone ">
             <input
               type="text"
               name="phoneNumber"
               id="inputPhoneNumber"
-              placeholder="  Phone"
+              placeholder={t("contactForm-Phone")}
             />
           </span>
           <div className="input-email">
@@ -26,14 +29,14 @@ const ContactForm = () => {
               type="email"
               name="email"
               id="inputEmail"
-              placeholder="  Email"
+              placeholder={t("contactForm-Emali")}
             />
           </div>
           <div className="input-message">
             <textarea
               name="Message"
               id="inputMessage"
-              placeholder="  Message"
+              placeholder={t("contactForm-Massage")}
             ></textarea>
           </div>
         </form>

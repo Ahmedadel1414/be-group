@@ -4,6 +4,8 @@ import Contact from "./components/commen/contact/Contact";
 import Footer from "./components/commen/footer/Footer";
 import NavBarr from "./components/commen/navBarr/NavBarr";
 import Menu from "./components/commen/menu/Menu";
+import LeftSideBarr from "./components/commen/leftSideBarr/LeftSideBarr";
+import "./utils/i18n";
 
 export const chickIsNavHidden = createContext();
 export const isNavTrue = createContext();
@@ -17,6 +19,7 @@ function App() {
         <>
           <Menu />
           <NavBarr />
+          <LeftSideBarr />
           <Outlet />
           <Contact />
           <Footer />

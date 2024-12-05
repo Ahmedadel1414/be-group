@@ -2,8 +2,11 @@ import { useContext, useEffect } from "react";
 import ourClients from "/menu/OurClients.jpg";
 import { isNavTrue } from "../../../../App";
 import "./menu-left-side.css";
+import { useTranslation } from "react-i18next";
 
 const MenuLeftSide = () => {
+  const { t } = useTranslation();
+
   const isNavHidden = useContext(isNavTrue);
 
   useEffect(() => {
@@ -28,36 +31,36 @@ const MenuLeftSide = () => {
           <div className="menu-text-content menu-services h-[55%] content-center">
             <div className="menu-servieces-title">
               <span className="menu-line"></span>
-              <span>Our Servieces</span>
+              <span>{t("leftSideMenu-OurServieces")}</span>
             </div>
             <nav>
               <a href="#" className="block">
-                Wep Development
+                {t("leftSideMenu-WepDevelopment")}
               </a>
             </nav>
             <nav>
               <a href="#" className="main-menu-links1 block ">
-                Mobile App
+                {t("leftSideMenu-MobileApp")}
               </a>
             </nav>
             <nav>
               <a href="#" className="main-menu-links2 block ">
-                Branding
+                {t("leftSideMenu-Branding")}
               </a>
             </nav>
             <nav>
               <a href="#" className="main-menu-links3 block ">
-                Social Media Management
+                {t("leftSideMenu-SocialMediaManagement")}
               </a>
             </nav>
             <nav>
               <a href="#" className="main-menu-links4 block ">
-                Google Adword
+                {t("leftSideMenu-GoogleADword")}
               </a>
             </nav>
             <nav>
               <a href="#" className="main-menu-links5 block ">
-                Media Production
+                {t("leftSideMenu-MoediaProduction")}
               </a>
             </nav>
           </div>
@@ -69,7 +72,7 @@ const MenuLeftSide = () => {
                 className="menu-img h-full"
               />
             </a>
-            <h1 className="menu-text">Our Clients</h1>
+            <h1 className="menu-text">{t("leftSideMenu-OurClients")}</h1>
           </div>
         </div>
       </section>

@@ -1,15 +1,18 @@
 .bottom-input-container {
-  @apply relative bg-transparent border border-solid border-main-color p-1 rounded-full cursor-pointer text-white;
+  @apply flex bg-transparent border border-solid border-main-color p-1 rounded-full cursor-pointer text-white;
 }
 .input-text {
-  @apply ml-3;
+  @apply flex-1 mx-3;
 }
-.bottom-input-container::before {
-  @apply absolute content-[""] right-3 top-1/2 bg-transparent border border-white rounded-full border-solid w-[20px] h-[20px] -translate-y-1/2;
+.input-bolet{
+  @apply  bg-transparent my-auto mx-3 border border-white rounded-full border-solid w-[25px] h-[25px] ;
+  
 }
 .bottom-input-container:hover {
   @apply bg-main-color;
 }
-.bottom-input-container:hover.bottom-input-container::before {
+
+.bottom-input-container:hover  .input-bolet{
   @apply bg-white;
 }
+

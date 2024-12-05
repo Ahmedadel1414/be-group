@@ -27,7 +27,7 @@ const Footer = () => {
             <img src={logo3} alt="logo" />
           </a>
         </div>
-        <div className="nav-text-content last-p">
+        <div className="menu-text-content last-p">
           <a>All Rights Reserved , Developed and Designed by Be Group</a>
         </div>
       </section>

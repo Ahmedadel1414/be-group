@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "./our-services-card.css";
 
 const OurServicesCard = ({ cardTitle, textParagraphTitle, textParagraph }) => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="oue-services-card">
@@ -14,7 +16,7 @@ const OurServicesCard = ({ cardTitle, textParagraphTitle, textParagraph }) => {
           <div className="btn-border btn-border2"></div>
         </span>
         <div className="card-link">
-          <a href="#">More Details</a>
+          <a>{t("ourServicesCard-Button")}</a>
         </div>
       </div>
     </>
