@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {
   AnothervalueTitle,
   AnothervalueText,
-} from "../../constants/anotherValue";
+} from "../../constants/AnotherValue";
 import {
   arAnothervalueTitle,
   arAnothervalueText,
