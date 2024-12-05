@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply relative bg-[#131314];
+  @apply relative bg-[#131314] ;
 }
-
-.container {
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f0831d; 
+}
+.container { 
   @apply w-[80%] m-auto;
 }
-
 /* start commen button */
 .commen-btn {
   @apply relative text-[25px] cursor-pointer text-white bg-[rgb(240,131,29,0)];
@@ -53,7 +57,12 @@ body {
     @apply text-[25px];
   }
 }
-@media (min-width: 321px) and (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 450px) {
+  .main-text {
+    @apply text-[35px];
+  }
+}
+@media (min-width: 451px) and (max-width: 600px) {
   .main-text {
     @apply text-[45px];
   }
@@ -115,3 +124,29 @@ body {
 .scroll-text {
   @apply transition-all duration-[400ms];
 }
+
+/* two back liens */
+.back-line::after{
+  @apply content-[""] absolute bg-main-color w-[2px] h-[50px] left-1/2 -translate-x-1/2 animate-[line-animation_10s_infinite]
+}
+@keyframes line-animation{
+  0%{
+    top: 0;
+  }
+  20%{
+    top: 20%;
+  }
+  40%{
+    top: 40%;
+  }
+  60%{
+    top: 60%;
+  }
+  80%{
+    top: 80%;
+  }
+  100%{
+    top: 100%;
+  }
+}
+/* two back liens */

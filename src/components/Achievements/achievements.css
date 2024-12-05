@@ -43,6 +43,6 @@
     @apply text-[15px];
   }
   .achievements-title span {
-    @apply text-[25px];
+    @apply text-[40px];
   }
 }

@@ -20,13 +20,13 @@
 
 @media (min-width: 220px) and (max-width: 320px) {
   .landing-text {
-    @apply -translate-y-40;
+    @apply -translate-y-20;
   }
 }
 
 @media (min-width: 321px) and (max-width: 457px) {
   .landing-text {
-    @apply -translate-y-40;
+    @apply -translate-y-20;
   }
 }
 

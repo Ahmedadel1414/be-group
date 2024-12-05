@@ -10,10 +10,6 @@ const LeftSideBarr = () => {
 
   const lng = cookies.get("i18next") || "en";
 
-  useEffect(() => {
-    window.document.dir = i18n.dir();
-  }, [lng]);
-
   const chickLacguage = () => {
     if (languageChiker == "Ar") {
       i18n.changeLanguage("ar");
@@ -23,6 +19,10 @@ const LeftSideBarr = () => {
       setLanguageChiker("Ar");
     }
   };
+
+  useEffect(() => {
+    window.document.dir = i18n.dir();
+  }, [lng]);
 
   return (
     <>
