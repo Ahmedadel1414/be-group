@@ -1,0 +1,1 @@
+git pull  origin main && sleep 5 && git push -u origin main 

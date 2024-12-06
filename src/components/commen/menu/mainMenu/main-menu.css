@@ -4,7 +4,6 @@
 .main-menu-links {
   @apply block translate-y-0 transition-all duration-1000;
 }
-
 .main-menu-links1 {
   @apply animate-[menu-links-animation_.6s_reverse];
 }
@@ -25,7 +24,7 @@
 }
 
 .nav-burger-menu {
-  @apply absolute right-10 top-10 cursor-pointer;
+  @apply absolute  top-10 cursor-pointer;
 }
 .nav-burger-menu div {
   @apply transition-all duration-500;

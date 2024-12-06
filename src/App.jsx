@@ -5,8 +5,8 @@ import Footer from "./components/commen/footer/Footer";
 import NavBarr from "./components/commen/navBarr/NavBarr";
 import Menu from "./components/commen/menu/Menu";
 import LeftSideBarr from "./components/commen/leftSideBarr/LeftSideBarr";
-import "./utils/i18n";
 import TwoBackLiens from "./components/commen/TwoBackLiens";
+import "./utils/i18n";
 
 export const chickIsNavHidden = createContext();
 export const isNavTrue = createContext();

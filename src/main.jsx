@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
 import BeGroup from "./Pages/BeGroup";
 import BeGroupAboutUs from "./Pages/BeGroupAboutUs";
 import BeGroupServices from "./Pages/BeGroupServices";
 import BeGroupOurWorks from "./Pages/BeGroupOurWorks";
 import BeGroupContactUs from "./Pages/BeGroupContactUs";
+import App from "./App.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

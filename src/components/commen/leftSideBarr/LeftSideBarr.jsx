@@ -1,28 +1,23 @@
+import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import i18n from "i18next";
 import "./left-side-barr.css";
-import { useEffect, useState } from "react";
-import cookies from "js-cookie";
 
 const LeftSideBarr = () => {
-  const [languageChiker, setLanguageChiker] = useState("Ar");
+  const [languageChecker, setLanguageChecker] = useState("Ar");
 
-  const lng = cookies.get("i18next") || "en";
-
-  const chickLacguage = () => {
-    if (languageChiker == "Ar") {
+  const chickLanguage = () => {
+    if (languageChecker == "Ar") {
       i18n.changeLanguage("ar");
-      setLanguageChiker("En");
+      window.document.dir = "rtl";
+      setLanguageChecker("En");
     } else {
       i18n.changeLanguage("en");
-      setLanguageChiker("Ar");
+      window.document.dir = "ltr";
+      setLanguageChecker("Ar");
     }
   };
-
-  useEffect(() => {
-    window.document.dir = i18n.dir();
-  }, [lng]);
 
   return (
     <>
@@ -30,11 +25,11 @@ const LeftSideBarr = () => {
         <div className="left-nav-icons">
           <button
             onClick={() => {
-              chickLacguage();
+              chickLanguage();
             }}
             className="left-nav-links left-nav-links1"
           >
-            <p>{languageChiker}</p>
+            <p>{languageChecker}</p>
           </button>
         </div>
         <div className="left-nav-icons left-nav-icons2">

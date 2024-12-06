@@ -4,15 +4,27 @@ import "./main-menu.css";
 import BurgerMenu from "../../BurgerMenu";
 import { chickIsNavHidden, isNavTrue } from "../../../../App";
 import { useTranslation } from "react-i18next";
+import cookies from "js-cookie";
 
 const MainMenu = () => {
   const { t } = useTranslation();
 
   const setIsNavHidden = useContext(chickIsNavHidden);
   const isNavHidden = useContext(isNavTrue);
+  const lng = cookies.get("i18next") || "en";
 
   useEffect(() => {
     const mainMenu = document.querySelector(".main-menu");
+    const navBurgerMenu = document.querySelector(".nav-burger-menu");
+    console.log(lng);
+
+    if (lng == "ar") {
+      navBurgerMenu.style.left = "40px";
+      navBurgerMenu.style.right = "auto";
+    } else if (lng == "en") {
+      navBurgerMenu.style.left = "auto";
+      navBurgerMenu.style.right = "40px";
+    }
 
     isNavHidden
       ? setTimeout(() => {
@@ -21,7 +33,7 @@ const MainMenu = () => {
       : setTimeout(() => {
           mainMenu.style.transform = "translateY(0%)";
         }, 200);
-  }, [isNavHidden]);
+  }, [isNavHidden, lng]);
 
   return (
     <>
