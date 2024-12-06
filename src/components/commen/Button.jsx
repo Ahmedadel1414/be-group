@@ -5,11 +5,15 @@ const Button = ({ padding, icon, text }) => {
   const lng = cookies.get("i18next");
 
   useEffect(() => {
-    const btnIcon = document.querySelector(".btn-icon");
+    const btnIcon = document.querySelectorAll(".btn-icon");
     if (lng == "ar") {
-      btnIcon.style = "transform: rotate(180deg)";
+      btnIcon.forEach((element) => {
+        element.style = "transform: rotate(180deg)";
+      });
     } else if (lng == "en") {
-      btnIcon.style = "transform: rotate(0deg)";
+      btnIcon.forEach((element) => {
+        element.style = "transform: rotate(0deg)";
+      });
     }
   }, [lng]);
 

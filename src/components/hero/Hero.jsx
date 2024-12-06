@@ -28,6 +28,7 @@ const Hero = () => {
                 icon={
                   <FaArrowRight
                     style={{ display: "inline", marginLeft: "10px" }}
+                    className=""
                   />
                 }
               />
